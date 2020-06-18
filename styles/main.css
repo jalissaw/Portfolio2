@@ -430,22 +430,36 @@ main .projects .cardproject {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  position: relative;
 }
 
 main .projects .cardproject .airimg {
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   -webkit-transition: ease-in 0.4s all;
   transition: ease-in 0.4s all;
 }
 
-main .projects .cardproject .airimg:hover ~ button {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
-  opacity: 1;
+@media (min-width: 200px) and (max-width: 415px) {
+  main .projects .cardproject .airimg {
+    height: 85%;
+    width: 85%;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 829px) {
+  main .projects .cardproject .airimg {
+    height: 85%;
+    width: 85%;
+  }
+}
+
+@media (min-width: 830px) and (max-width: 1200px) {
+  main .projects .cardproject .airimg {
+    height: 85%;
+    width: 85%;
+  }
 }
 
 main .projects .cardproject .airimg:hover {
@@ -454,42 +468,54 @@ main .projects .cardproject .airimg:hover {
 }
 
 main .projects .cardproject .imgdescript {
-  margin-right: 0 auto;
+  margin: 0 auto;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   width: 50%;
 }
 
-main .projects .cardproject button {
-  position: absolute;
-  width: 10%;
+@media (min-width: 200px) and (max-width: 415px) {
+  main .projects .cardproject .imgdescript {
+    width: 80%;
+    font-size: 1.2em;
+  }
+}
+
+main .projects .cardproject .push {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .projects .cardproject .push button {
+  width: 200px;
   height: 50px;
   border: none;
   color: white;
   border: solid 2px white;
   background: black;
   text-transform: uppercase;
-  font-size: 1em;
-  -webkit-transition: ease-in 0.5s all;
-  transition: ease-in 0.5s all;
-  z-index: 2;
-  opacity: 0;
+  font-size: 100%;
+  margin-top: 15px;
+  text-align: center;
+  -webkit-transition: ease-in 0.3s all;
+  transition: ease-in 0.3s all;
 }
 
-main .projects .cardproject button:hover {
-  opacity: 1;
+main .projects .cardproject .push button:hover {
+  background: #5872c9;
+  cursor: pointer;
 }
 
-main .projects .cardproject .source {
-  position: absolute;
-  top: 70%;
-  left: 52%;
-}
-
-main .projects .cardproject .web {
-  position: absolute;
-  top: 70%;
-  left: 38%;
+@media (min-width: 200px) and (max-width: 415px) {
+  main .projects .cardproject .push button {
+    margin-top: 5px;
+  }
 }
 
 footer {
@@ -668,6 +694,12 @@ footer .contactinfo .contacticons {
 footer .contactinfo .contacticons .fab {
   color: #5872c9;
   font-size: 3em;
+  -webkit-transition: ease-in 0.3s all;
+  transition: ease-in 0.3s all;
+}
+
+footer .contactinfo .contacticons .fab:hover {
+  color: white;
 }
 
 footer .contactinfo .contacticons .fa-github {
@@ -698,6 +730,10 @@ footer .footername {
   margin: 0;
   padding: 0;
   font-family: Bellota;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -792,19 +828,5 @@ header .heading .header .name {
   padding: 0px 5px;
   font-size: 1.5em;
   color: white;
-}
-
-header .heading .titlecon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .heading .titlecon .title {
-  position: relative;
-}
-
-header .heading .titlecon .title::before {
-  content: '';
 }
 /*# sourceMappingURL=main.css.map */

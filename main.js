@@ -2,7 +2,7 @@ const toggle = document.querySelector('.toggle');
 const showMenu = document.querySelector('.shownav');
 const aboutSect = document.querySelector('.about');
 const titles = document.querySelectorAll('h2');
-
+const showLink = document.querySelectorAll('.shownav a');
 
 window.addEventListener('scroll', () =>{
     const position = aboutSect.getBoundingClientRect().top;
@@ -17,9 +17,19 @@ window.addEventListener('scroll', () =>{
 
 
 toggle.addEventListener('click', () => {
-    console.log('clicked');
     showMenu.classList.toggle('open');
-})  
+});
+
+
+    
+    for(var i = 0; i < showLink.length; i++) {
+        
+        showLink[i].addEventListener('click', () => {
+            showMenu.classList.remove('open');
+        });
+    }
+
+
 
 
 function scrolled () {

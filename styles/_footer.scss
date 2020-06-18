@@ -115,6 +115,11 @@ footer {
             .fab {
                 color: $primary-color;
                 font-size: 3em;
+                transition: ease-in 0.3s all;
+
+                &:hover {
+                    color: white;
+                }
             }
 
             .fa-github {

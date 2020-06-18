@@ -14,6 +14,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     height: 100vh;
     width: 100%;
@@ -81,21 +85,6 @@ header{
                 font-size: 1.5em;
                 color: white;
                 
-            }
-        }
-
-        .titlecon {
-            display: flex;
-           
-
-            .title {
-                position: relative;
-                
-
-                &::before{
-                    content: '';
-                  
-                }
             }
         }
 

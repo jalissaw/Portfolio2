@@ -15,21 +15,21 @@
         </div>
         <div class="shownav">
             <ul class="showlinks">
-                <li class="showlink"><a href="#">Home</a></li>
-                <li class="showlink"><a href="#">About</a></li>
-                <li class="showlink"><a href="#">Projects</a></li>
-                <li class="showlink"><a href="#">Contact</a></li>
+                <li class="showlink"><a href="#home">Home</a></li>
+                <li class="showlink"><a href="#about">About</a></li>
+                <li class="showlink"><a href="#projects">Projects</a></li>
+                <li class="showlink"><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <nav class="nav">
             <ul class="links">
-                <li class="link"><a href="#">Home</a></li>
-                <li class="link"><a href="#">About</a></li>
-                <li class="link"><a href="#">Projects</a></li>
-                <li class="link"><a href="#">Contact</a></li>
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#about">About</a></li>
+                <li class="link"><a href="#projects">Projects</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="heading">
+        <div class="heading" id="home">
             <div class="header">
                 <span class="hello">Hello</span>
                 <p class="intro">I'm<span class="name">Jalissa Williams</span>, a Front End Engineer who focuses on the visuals and commits to making your vision reality!</p>
@@ -38,7 +38,7 @@
     </header>
 
     <main>
-        <div class="about">
+        <div class="about" id="about">
             <h2 class="aboutme">About Me</h2>
             <p class="info">
                 A self taught developer who likes to keep it simple!
@@ -97,21 +97,23 @@
                 </ul> -->
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2 class="projecttitle">Projects</h2>
             <div class="cardprojects">
                 <div class="cardproject">
-                    <img src="elmore.JPG" class="airimg" alt="airplane">
+                    <img src="elmore.gif" class="airimg" alt="airplane">
                     <p class="imgdescript">A portofolio built using HTML, SASS, Javascript, Express, Node JS, and MongoDB</p>
-                    <button class="source">Source Code</button>
-                    <button class="web">Website</button>
+                    <div class="push">
+                        <a href="https://github.com/jalissaw/AirplanePortfolio"><button class="source">Source Code</button></a>
+                        <a href="https://jalissaw.github.io/AirplanePortfolio/"><button class="web">Website</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2 class="contacttitle">Contact Me</h2>
             <h3 class="contactmessage">Let's make your vision, reality</h3>
             <form action="POST" method="/">
@@ -124,8 +126,8 @@
 
         <div class="contactinfo">
             <div class="contacticons">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
+                <a href="https://www.linkedin.com/in/jalissa-williams-30a013122/"><i class="fab fa-linkedin"></i></i></a>
+                <a href="https://github.com/jalissaw"><i class="fab fa-github"></i></a>
             </div>
             <div class="copy">
                 <h2 class="footername">Jalissa Williams &copy2020</h2>
