@@ -116,8 +116,9 @@
         <div class="contact" id="contact">
             <h2 class="contacttitle">Contact Me</h2>
             <h3 class="contactmessage">Let's make your vision, reality</h3>
-            <form action="POST" method="/">
-                <input type="text" class="formname iform"name="name" placeholder="Name" required>
+            <h3 class="errorMessage"></h3>
+            <form action="userdata" method="POST" class="form">
+                <input type="text" class="formname iform" name="name" placeholder="Name" required>
                 <input type="email" class="email iform" name="email" placeholder="Email" required>
                 <textarea name="message" id="message" placeholder="Your message...."></textarea>
                 <button type="submit" class="submit">Send</button>
@@ -134,6 +135,9 @@
             </div>
         </div>
     </footer>
+
+
+<script src="ajax.js"></script>   
 <script src="main.js"></script>
 </body>
 </html>

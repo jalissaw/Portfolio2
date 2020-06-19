@@ -42,7 +42,7 @@ app.post('/userdata', (req, res) => {
           from: '"Nodemailer"', 
           to: "jalissa_williams@yahoo.com", 
           subject: `From Nodemailer: ${name}`, // Subject line
-          text: "Hello world?", // plain text body
+          text: "What is up?", // plain text body
           html: `${message}`, // html body
         });
       

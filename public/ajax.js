@@ -12,7 +12,7 @@ xhr.onload = () => {
             errorMessage.innerHTML = 'Name And Email Required';
             event.preventDefault();
         } else {
-            errorMessage.innerHTML = 'Success! Someone will be in touch shortly.'
+            errorMessage.innerHTML = 'Success! I will be in touch shortly.'
         }
 
     });
