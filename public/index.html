@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Jalissa Williams</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <input type="checkbox" class="toggle">
+            <span class="hamburger"></span>
+        </div>
+        <div class="shownav">
+            <ul class="showlinks">
+                <li class="showlink"><a href="#home">Home</a></li>
+                <li class="showlink"><a href="#about">About</a></li>
+                <li class="showlink"><a href="#projects">Projects</a></li>
+                <li class="showlink"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <ul class="links">
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#about">About</a></li>
+                <li class="link"><a href="#projects">Projects</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="heading" id="home">
+            <div class="header">
+                <span class="hello">Hello</span>
+                <p class="intro">I'm<span class="name">Jalissa Williams</span>, a Front End Engineer who focuses on the visuals and commits to making your vision reality!</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="about" id="about">
+            <h2 class="aboutme">About Me</h2>
+            <p class="info">
+                A self taught developer who likes to keep it simple!
+             </p>
+        </div>
+
+        <div class="areas">
+            <div class="code card">
+                <i class="fas fa-code"></i>
+                <h3 class="cleancode cardtitle">Clean Code</h3>
+                <p class="codeinfo infotxt">Neat, compact code for easy navigation</p>
+            </div>
+            <div class="mobile card">
+                <i class="fas fa-mobile"></i>
+                <h3 class="design cardtitle">Design</h3>
+                <p class="designinfo infotxt">Responsive, sleek, user friendly designs</p>
+            </div>
+            <div class="innovative card">
+                <i class="fas fa-lightbulb"></i>
+                <h3 class="ideainfo cardtitle">Innovative</h3>
+                <p class="ideainfo infotxt">Always positive, always thinking of ideas</p>
+            </div>
+            <div class="mobile card">
+                <i class="fas fa-mobile"></i>
+                <h3 class="design cardtitle">Design</h3>
+                <p class="designinfo infotxt">Responsive, sleek, user friendly designs</p>
+            </div>
+        </div>
+        <div class="skillset">
+            <div class="webdev sect">
+                <h3 class="skills skilltitle">Web Development</h3>
+                <p class="skill skillslist">HTML5 CSS SASS Javascript Node JS Express MongoDB Github</p>
+                <!-- <ul class="skill skillslist">
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Figma</li>
+                    <li>Github</li>
+                </ul> -->
+            </div>
+            <div class="content sect">
+                <h3 class="manage skilltitle">Content Management</h3>
+                <p class="managelist skillslist">Google Analytics Google Ads SEO Copywriting E-Mail Marketing Bronto Magento Wix Adobe Photoshop Premiere Pro</p>
+                <!-- <ul class="skill skillslist">
+                    <li>Google Anaytics</li>
+                    <li>Google Ads</li>
+                    <li>SEO</li>
+                    <li>Copywriting</li>
+                    <li>Email Marketing</li>
+                    <li>Magento</li>
+                    <li>Bronto</li>
+                    <li>Wix</li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2 class="projecttitle">Projects</h2>
+            <div class="cardprojects">
+                <div class="cardproject">
+                    <img src="elmore.gif" class="airimg" alt="airplane">
+                    <p class="imgdescript">A portofolio built using HTML, SASS, Javascript, Express, Node JS, and MongoDB</p>
+                    <div class="push">
+                        <a href="https://github.com/jalissaw/AirplanePortfolio"><button class="source">Source Code</button></a>
+                        <a href="https://jalissaw.github.io/AirplanePortfolio/"><button class="web">Website</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact" id="contact">
+            <h2 class="contacttitle">Contact Me</h2>
+            <h3 class="contactmessage">Let's make your vision, reality</h3>
+            <h3 class="errorMessage"></h3>
+            <form action="userdata" method="POST" class="form">
+                <input type="text" class="formname iform" name="name" placeholder="Name" required>
+                <input type="email" class="email iform" name="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Your message...."></textarea>
+                <button type="submit" class="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="contactinfo">
+            <div class="contacticons">
+                <a href="https://www.linkedin.com/in/jalissa-williams-30a013122/"><i class="fab fa-linkedin"></i></i></a>
+                <a href="https://github.com/jalissaw"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="copy">
+                <h2 class="footername">Jalissa Williams &copy2020</h2>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="ajax.js"></script>   
+<script src="main.js"></script>
+</body>
+</html>

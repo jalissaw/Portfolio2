@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Patua+One&family=Ramabhadra&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bellota:ital@1&family=Merriweather+Sans&display=swap');
+@import 'nav';
+@import 'content';
+@import 'footer';
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Bellota;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: $primary-color;
+    
+
+    .heading {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 100px;
+
+            @media #{$mphones} {
+                font-size: 0.9em;
+            }
+            @media #{$sphones} {
+                font-size: 0.8em;
+            }
+            
+
+            .hello {
+                position: absolute;
+                top: 18%;
+                left: 10%;
+                font-size: 250px;
+                color: transparent;
+                letter-spacing: 12px;
+                -webkit-text-stroke-width: 5px;
+                -webkit-text-stroke-color: black;
+
+                @media #{$laptop} {
+                    font-size: 6em;
+                }
+                @media #{$tablets} {
+                    font-size: 8em;
+                }
+                @media #{$lphones} {
+                    font-size: 5em;
+                }
+                @media #{$mphones} {
+                    font-size: 4.5em;
+                }
+                @media #{$sphones} {
+                    font-size: 4.5em;
+                }
+               
+            }
+
+            .intro {
+                font-size: 2em;
+                width: 75%;
+                color: black;
+
+            }
+
+            .name {
+                text-transform: uppercase;
+                padding: 0px 5px;
+                font-size: 1.5em;
+                color: white;
+                
+            }
+        }
+
+    }
+
+}
+
+
