@@ -165,81 +165,137 @@ main {
 
         }
 
-        .cardproject{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            
-            .airimg {
-                height: 100%;
+        .cardprojects {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-wrap: wrap;
                 width: 100%;
-                filter: grayscale(1);
-                transition: ease-in 0.4s all;
+                height: 100%;
 
-                @media #{$allphones} {
-                    height: 85%;
-                    width: 85%;
-                }
-                @media #{$tablets} {
-                    height: 85%;
-                    width: 85%;
-                }
                 @media #{$laptop} {
-                    height: 85%;
-                    width: 85%;
-                }
-
-                &:hover {
-                    filter: grayscale(0);
+                    height: 80%;
+                   
                 }
                 
-            }
+      
 
-            .imgdescript {
-                margin: 0 auto;
+            .cardproject{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
-                font-size: 1.3em;
+                height: 80%;
                 width: 50%;
 
-                @media #{$allphones} {
-                    width: 80%;
-                    font-size: 1.2em;
+                @media #{$laptop} {
+                    height: 60%;
+                    width: 100%;
+                    zoom: 0.8;
                 }
-            }
 
-            .push {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
+                @media #{$tablets} {
+                    height: 40%;
+                    width: 100%;
+                    zoom: 0.8;
+                }
 
-                button {
-                    width: 200px;
-                    height: 50px;
-                    border: none;
-                    color: white;
-                    border: solid 2px white;
-                    background: black;
-                    text-transform: uppercase;
-                    font-size: 100%;
-                    margin-top: 15px;
-                    text-align: center;
-                    transition: ease-in 0.3s all;
+                @media #{$lphones} {
+                    height: 50%;
+                    width: 100%;
+                    zoom: 0.8;
+                }
+
+                @media #{$mphones} {
+                    height: 50%;
+                    width: 100%;
+                    zoom: 0.65;
+                }
+                @media #{$sphones} {
+                    height: 50%;
+                    width: 100%;
+                    zoom: 0.65;
+                }
+                
+                .airimg {
+                    height: 70%;
+                    width: 80%;
+                    filter: grayscale(1);
+                    transition: ease-in 0.4s all;
+
+                    @media #{$sphones} {
+                        height: 60%;
+                        width: 70%;
+                    }
+
+                    @media #{$mphones} {
+                        height: 60%;
+                        width: 80%;
+                    }
+
+                    @media #{$lphones} {
+                        height: 60%;
+                        width: 80%;
+                    }
+                    @media #{$tablets} {
+                        height: 70%;
+                        width: 60%;
+                    }
+                    @media #{$laptop} {
+                        height: 70%;
+                        width: 60%;
+                    }
 
                     &:hover {
-                       background: $primary-color; 
-                       cursor: pointer;
+                        filter: grayscale(0);
                     }
                     
+                }
+
+                .imgdescript {
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: 1.3em;
+                    width: 75%;
+
                     @media #{$allphones} {
-                        margin-top: 5px;
+                        width: 80%;
+                        font-size: 1.2em;
+                    }
+                }
+
+                .push {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    button {
+                        width: 200px;
+                        height: 50px;
+                        border: none;
+                        color: white;
+                        border: solid 2px white;
+                        background: black;
+                        text-transform: uppercase;
+                        font-size: 100%;
+                        margin-top: 15px;
+                        text-align: center;
+                        transition: ease-in 0.3s all;
+
+                        &:hover {
+                            background: $primary-color; 
+                            cursor: pointer;
+                        }
+                        
+                        @media #{$allphones} {
+                            margin-top: 5px;
+                        }
+
                     }
 
                 }
 
             }
-
         }
     }
 }

@@ -25,6 +25,11 @@ footer {
 
         }
 
+        .errorMessage {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
         .contactmessage {
             text-align: center;
             font-size: 1.5em;
@@ -51,14 +56,11 @@ footer {
             width: 75%;
         }
 
-        @media #{$laptop} {
+            @media #{$laptop} {
             width: 75%;
         }
            
-           
-            
-            
-            .iform {
+           .iform {
                 height: 50px;
                 width: 100%;
                 margin-bottom: 10px;
@@ -102,15 +104,14 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 35%;
+        height: 30vh;
         width: 100%;
         background: black;
         margin-top: 20px;
 
         .contacticons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        //    width: 100%;
+        text-align: center;
 
             .fab {
                 color: $primary-color;
@@ -132,11 +133,12 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        height: 30%;
     }
 
 
     .footername {
-        margin-top: 100px;
+        // margin-top: 100px;
         font-size: 1em;
         color: white;
     }
