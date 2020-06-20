@@ -33,6 +33,7 @@
   font-size: 1.5em;
 }
 
+
 @media (min-width: 416px) and (max-width: 829px) {
   .nav .links .link {
     display: none;
