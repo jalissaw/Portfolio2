@@ -4,9 +4,6 @@ const nodemailer = require('nodemailer');
 const mongoose = require('mongoose')
 
 const app = express();
-
-
-// app.use(express.static(__dirname + 'public'));
 app.use(express.static('../public'))
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -41,9 +38,9 @@ app.post('/userdata', (req, res) => {
         let info = await transporter.sendMail({
           from: '"Nodemailer"', 
           to: "jalissa_williams@yahoo.com", 
-          subject: `From Nodemailer: ${name}`, // Subject line
-          text: "What is up?", // plain text body
-          html: `${message}`, // html body
+          subject: `From Nodemailer: ${name}`,
+          text: "What is up?", 
+          html: `${message}`, 
         });
       
         console.log("Message sent: %s", info.messageId);

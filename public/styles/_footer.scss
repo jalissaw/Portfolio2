@@ -56,7 +56,7 @@ footer {
             width: 75%;
         }
 
-        @media #{$laptop} {
+            @media #{$laptop} {
             width: 75%;
         }
            
@@ -104,15 +104,14 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 35%;
+        height: 30vh;
         width: 100%;
         background: black;
         margin-top: 20px;
 
         .contacticons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        //    width: 100%;
+        text-align: center;
 
             .fab {
                 color: $primary-color;
@@ -134,11 +133,12 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        height: 30%;
     }
 
 
     .footername {
-        margin-top: 100px;
+        // margin-top: 100px;
         font-size: 1em;
         color: white;
     }
