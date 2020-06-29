@@ -155,42 +155,6 @@
   color: #5872c9;
 }
 
-.showlink:nth-child(1) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
-.showlink:nth-child(2) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-}
-
-.showlink:nth-child(3) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s;
-}
-
-.showlink:nth-child(4) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 1.6s;
-          transition-delay: 1.6s;
-}
-
 main {
   width: 100%;
 }
@@ -429,11 +393,7 @@ main .projects .cardprojects {
   height: 100%;
 }
 
-<<<<<<< HEAD
 @media (min-width: 830px) and (max-width: 5000px) {
-=======
-@media (min-width: 830px) and (max-width: 1200px) {
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
   main .projects .cardprojects {
     height: 80%;
   }
@@ -455,7 +415,6 @@ main .projects .cardprojects .cardproject {
   width: 50%;
 }
 
-<<<<<<< HEAD
 @media (min-width: 830px) and (max-width: 5000px) {
   main .projects .cardprojects .cardproject {
     height: 60%;
@@ -477,63 +436,30 @@ main .projects .cardprojects .cardproject {
     height: 30%;
     width: 100%;
     zoom: 0.65;
-=======
-@media (min-width: 830px) and (max-width: 1200px) {
-  main .projects .cardprojects .cardproject {
-    height: 60%;
-    width: 100%;
-    zoom: 0.8;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 829px) {
-  main .projects .cardprojects .cardproject {
-    height: 40%;
-    width: 100%;
-    zoom: 0.8;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
   }
 }
 
 @media (min-width: 375px) and (max-width: 415px) {
   main .projects .cardprojects .cardproject {
-<<<<<<< HEAD
     height: 30%;
     width: 100%;
     zoom: 0.6;
-=======
-    height: 50%;
-    width: 100%;
-    zoom: 0.8;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
   }
 }
 
 @media (min-width: 321px) and (max-width: 374px) {
   main .projects .cardprojects .cardproject {
-<<<<<<< HEAD
     height: 35%;
     width: 100%;
     zoom: 0.6;
-=======
-    height: 50%;
-    width: 100%;
-    zoom: 0.65;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
   }
 }
 
 @media (max-width: 320px) {
   main .projects .cardprojects .cardproject {
-<<<<<<< HEAD
     height: 30%;
     width: 100%;
     zoom: 0.6;
-=======
-    height: 50%;
-    width: 100%;
-    zoom: 0.65;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
   }
 }
 
@@ -549,7 +475,6 @@ main .projects .cardprojects .cardproject .airimg {
 @media (max-width: 320px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 60%;
-<<<<<<< HEAD
     width: 75%;
   }
 }
@@ -578,41 +503,10 @@ main .projects .cardprojects .cardproject .airimg {
 @media (min-width: 416px) and (max-width: 600px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 60%;
-=======
-    width: 70%;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 374px) {
-  main .projects .cardprojects .cardproject .airimg {
-    height: 60%;
-    width: 80%;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 415px) {
-  main .projects .cardprojects .cardproject .airimg {
-    height: 60%;
-    width: 80%;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 829px) {
-  main .projects .cardprojects .cardproject .airimg {
-    height: 70%;
     width: 60%;
   }
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
-  main .projects .cardprojects .cardproject .airimg {
-    height: 70%;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
-    width: 60%;
-  }
-}
-
-<<<<<<< HEAD
 @media (min-width: 830px) and (max-width: 5000px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 70%;
@@ -620,8 +514,6 @@ main .projects .cardprojects .cardproject .airimg {
   }
 }
 
-=======
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
 main .projects .cardprojects .cardproject .airimg:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -856,11 +748,7 @@ footer .contactinfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   padding: 20px 0px;
-=======
-  height: 30vh;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
   width: 100%;
   background: black;
   margin-top: 20px;
@@ -895,11 +783,7 @@ footer .copy {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-<<<<<<< HEAD
   padding-top: 25px;
-=======
-  height: 30%;
->>>>>>> 0e7703d2989754b447c12b8708184609ca281857
 }
 
 footer .footername {
