@@ -155,42 +155,6 @@
   color: #5872c9;
 }
 
-.showlink:nth-child(1) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
-.showlink:nth-child(2) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-}
-
-.showlink:nth-child(3) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s;
-}
-
-.showlink:nth-child(4) {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: all ease-in 0.4s;
-  transition: all ease-in 0.4s;
-  -webkit-transition-delay: 1.6s;
-          transition-delay: 1.6s;
-}
-
 main {
   width: 100%;
 }
@@ -429,7 +393,7 @@ main .projects .cardprojects {
   height: 100%;
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
+@media (min-width: 830px) and (max-width: 5000px) {
   main .projects .cardprojects {
     height: 80%;
   }
@@ -451,43 +415,51 @@ main .projects .cardprojects .cardproject {
   width: 50%;
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
+@media (min-width: 830px) and (max-width: 5000px) {
   main .projects .cardprojects .cardproject {
     height: 60%;
-    width: 100%;
-    zoom: 0.8;
+    width: 50%;
+    zoom: 0.7;
   }
 }
 
-@media (min-width: 416px) and (max-width: 829px) {
+@media (min-width: 601px) and (max-width: 829px) {
   main .projects .cardprojects .cardproject {
-    height: 40%;
+    height: 50%;
+    width: 50%;
+    zoom: 0.6;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 600px) {
+  main .projects .cardprojects .cardproject {
+    height: 30%;
     width: 100%;
-    zoom: 0.8;
+    zoom: 0.65;
   }
 }
 
 @media (min-width: 375px) and (max-width: 415px) {
   main .projects .cardprojects .cardproject {
-    height: 50%;
+    height: 30%;
     width: 100%;
-    zoom: 0.8;
+    zoom: 0.6;
   }
 }
 
 @media (min-width: 321px) and (max-width: 374px) {
   main .projects .cardprojects .cardproject {
-    height: 50%;
+    height: 35%;
     width: 100%;
-    zoom: 0.65;
+    zoom: 0.6;
   }
 }
 
 @media (max-width: 320px) {
   main .projects .cardprojects .cardproject {
-    height: 50%;
+    height: 30%;
     width: 100%;
-    zoom: 0.65;
+    zoom: 0.6;
   }
 }
 
@@ -503,32 +475,39 @@ main .projects .cardprojects .cardproject .airimg {
 @media (max-width: 320px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 60%;
-    width: 70%;
+    width: 75%;
   }
 }
 
 @media (min-width: 321px) and (max-width: 374px) {
   main .projects .cardprojects .cardproject .airimg {
-    height: 60%;
-    width: 80%;
+    height: 55%;
+    width: 70%;
   }
 }
 
 @media (min-width: 375px) and (max-width: 415px) {
   main .projects .cardprojects .cardproject .airimg {
-    height: 60%;
-    width: 80%;
+    height: 70%;
+    width: 65%;
   }
 }
 
-@media (min-width: 416px) and (max-width: 829px) {
+@media (min-width: 601px) and (max-width: 829px) {
   main .projects .cardprojects .cardproject .airimg {
-    height: 70%;
+    height: 60%;
+    width: 70%;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 600px) {
+  main .projects .cardprojects .cardproject .airimg {
+    height: 60%;
     width: 60%;
   }
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
+@media (min-width: 830px) and (max-width: 5000px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 70%;
     width: 60%;
@@ -592,7 +571,7 @@ main .projects .cardprojects .cardproject .push button:hover {
 }
 
 footer {
-  height: 100vh;
+  position: relative;
   width: 100%;
 }
 
@@ -623,6 +602,18 @@ footer .contact .contacttitle {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   opacity: 0;
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  footer .contact .contacttitle {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 829px) {
+  footer .contact .contacttitle {
+    margin-bottom: 50px;
+  }
 }
 
 footer .contact .contacttitle.appear {
@@ -678,7 +669,7 @@ footer .contact form {
   }
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
+@media (min-width: 830px) and (max-width: 5000px) {
   footer .contact form {
     width: 75%;
   }
@@ -697,6 +688,12 @@ footer .contact #message {
   resize: vertical;
   padding-left: 10px;
   padding-top: 10px;
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  footer .contact #message {
+    height: 200px;
+  }
 }
 
 footer .contact ::-webkit-input-placeholder {
@@ -751,7 +748,7 @@ footer .contactinfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30vh;
+  padding: 20px 0px;
   width: 100%;
   background: black;
   margin-top: 20px;
@@ -786,7 +783,7 @@ footer .copy {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 30%;
+  padding-top: 25px;
 }
 
 footer .footername {
@@ -857,33 +854,33 @@ header .heading .header .hello {
   -webkit-text-stroke-color: black;
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
+@media (min-width: 830px) and (max-width: 5000px) {
   header .heading .header .hello {
-    font-size: 6em;
+    font-size: 12em;
   }
 }
 
 @media (min-width: 416px) and (max-width: 829px) {
   header .heading .header .hello {
-    font-size: 8em;
+    font-size: 9em;
   }
 }
 
 @media (min-width: 375px) and (max-width: 415px) {
   header .heading .header .hello {
-    font-size: 5em;
+    font-size: 7em;
   }
 }
 
 @media (min-width: 321px) and (max-width: 374px) {
   header .heading .header .hello {
-    font-size: 4.5em;
+    font-size: 7em;
   }
 }
 
 @media (max-width: 320px) {
   header .heading .header .hello {
-    font-size: 4.5em;
+    font-size: 6em;
   }
 }
 

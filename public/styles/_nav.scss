@@ -131,11 +131,3 @@
             }
         }
     }
-
-@for $i from 1 through 4 {
-    .showlink:nth-child(#{$i}) {
-        transform: translateX(0px);
-        transition: all ease-in 0.4s;
-        transition-delay: (0.4s * $i);
-    }
-}
