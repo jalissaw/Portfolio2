@@ -221,6 +221,7 @@ main .areas {
       flex-wrap: wrap;
   text-align: center;
   width: 100%;
+  padding: 0px 20px;
 }
 
 @media (min-width: 200px) and (max-width: 415px) {
@@ -393,7 +394,7 @@ main .projects .cardprojects {
   height: 100%;
 }
 
-@media (min-width: 830px) and (max-width: 5000px) {
+@media (min-width: 830px) and (max-width: 10000px) {
   main .projects .cardprojects {
     height: 80%;
   }
@@ -415,9 +416,9 @@ main .projects .cardprojects .cardproject {
   width: 50%;
 }
 
-@media (min-width: 830px) and (max-width: 5000px) {
+@media (min-width: 830px) and (max-width: 10000px) {
   main .projects .cardprojects .cardproject {
-    height: 60%;
+    height: 50%;
     width: 50%;
     zoom: 0.7;
   }
@@ -443,7 +444,7 @@ main .projects .cardprojects .cardproject {
   main .projects .cardprojects .cardproject {
     height: 30%;
     width: 100%;
-    zoom: 0.6;
+    zoom: 0.58;
   }
 }
 
@@ -451,7 +452,7 @@ main .projects .cardprojects .cardproject {
   main .projects .cardprojects .cardproject {
     height: 35%;
     width: 100%;
-    zoom: 0.6;
+    zoom: 0.55;
   }
 }
 
@@ -459,7 +460,7 @@ main .projects .cardprojects .cardproject {
   main .projects .cardprojects .cardproject {
     height: 30%;
     width: 100%;
-    zoom: 0.6;
+    zoom: 0.55;
   }
 }
 
@@ -474,15 +475,15 @@ main .projects .cardprojects .cardproject .airimg {
 
 @media (max-width: 320px) {
   main .projects .cardprojects .cardproject .airimg {
-    height: 60%;
-    width: 75%;
+    height: 55%;
+    width: 60%;
   }
 }
 
 @media (min-width: 321px) and (max-width: 374px) {
   main .projects .cardprojects .cardproject .airimg {
-    height: 55%;
-    width: 70%;
+    height: 50%;
+    width: 65%;
   }
 }
 
@@ -507,7 +508,7 @@ main .projects .cardprojects .cardproject .airimg {
   }
 }
 
-@media (min-width: 830px) and (max-width: 5000px) {
+@media (min-width: 830px) and (max-width: 10000px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 70%;
     width: 60%;
@@ -669,7 +670,7 @@ footer .contact form {
   }
 }
 
-@media (min-width: 830px) and (max-width: 5000px) {
+@media (min-width: 830px) and (max-width: 10000px) {
   footer .contact form {
     width: 75%;
   }
@@ -866,7 +867,7 @@ header .heading .header .hello {
   -webkit-text-stroke-color: black;
 }
 
-@media (min-width: 830px) and (max-width: 5000px) {
+@media (min-width: 830px) and (max-width: 10000px) {
   header .heading .header .hello {
     font-size: 12em;
   }

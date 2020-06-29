@@ -47,6 +47,7 @@ main {
         flex-wrap: wrap;
         text-align: center;
         width: 100%;
+        padding: 0px 20px;
 
         
         @media #{$allphones} {
@@ -188,7 +189,7 @@ main {
                 width: 50%;
 
                 @media #{$laptop} {
-                    height: 60%;
+                    height: 50%;
                     width: 50%;
                     zoom: 0.7;
                 }
@@ -208,18 +209,18 @@ main {
                 @media #{$lphones} {
                     height: 30%;
                     width: 100%;
-                    zoom: 0.6;
+                    zoom: 0.58;
                 }
 
                 @media #{$mphones} {
                     height: 35%;
                     width: 100%;
-                    zoom: 0.6;
+                    zoom: 0.55;
                 }
                 @media #{$sphones} {
                     height: 30%;
                     width: 100%;
-                    zoom: 0.6;
+                    zoom: 0.55;
                 }
                 
                 .airimg {
@@ -229,13 +230,13 @@ main {
                     transition: ease-in 0.4s all;
 
                     @media #{$sphones} {
-                        height: 60%;
-                        width: 75%;
+                        height: 55%;
+                        width: 60%;
                     }
 
                     @media #{$mphones} {
-                        height: 55%;
-                        width: 70%;
+                        height: 50%;
+                        width: 65%;
                     }
 
                     @media #{$lphones} {
