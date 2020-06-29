@@ -55,19 +55,19 @@ header{
                 -webkit-text-stroke-color: black;
 
                 @media #{$laptop} {
-                    font-size: 6em;
+                    font-size: 12em;
                 }
                 @media #{$tablets} {
-                    font-size: 8em;
+                    font-size: 9em;
                 }
                 @media #{$lphones} {
-                    font-size: 5em;
+                    font-size: 7em;
                 }
                 @media #{$mphones} {
-                    font-size: 4.5em;
+                    font-size: 7em;
                 }
                 @media #{$sphones} {
-                    font-size: 4.5em;
+                    font-size: 6em;
                 }
                
             }

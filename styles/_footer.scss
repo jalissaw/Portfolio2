@@ -1,5 +1,5 @@
 footer {
-    height: 100vh;
+    position: relative;
     width: 100%;
 
     .contact{
@@ -18,11 +18,23 @@ footer {
             transform: translateX(20px);
             opacity: 0;
 
+            @media #{$allphones} {
+                margin-bottom: 50px;
+            }
+            @media #{$tablets} {
+                margin-bottom: 50px;
+            }
+
             &.appear {
                 transform: translateY(0px);
                 opacity: 1;
             }
 
+        }
+
+        .errorMessage {
+            margin-bottom: 15px;
+            font-size: 1.1em;
         }
 
         .contactmessage {
@@ -51,14 +63,11 @@ footer {
             width: 75%;
         }
 
-        @media #{$laptop} {
+            @media #{$laptop} {
             width: 75%;
         }
            
-           
-            
-            
-            .iform {
+           .iform {
                 height: 50px;
                 width: 100%;
                 margin-bottom: 10px;
@@ -72,6 +81,10 @@ footer {
             resize: vertical;
             padding-left: 10px;
             padding-top: 10px;
+
+            @media #{$allphones} {
+                height: 200px;
+            }
         }
 
         ::placeholder {
@@ -102,15 +115,13 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 35%;
+        padding: 20px 0px;
         width: 100%;
         background: black;
         margin-top: 20px;
-
+    
         .contacticons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        text-align: center;
 
             .fab {
                 color: $primary-color;
@@ -132,11 +143,11 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        padding-top: 25px;
     }
 
 
     .footername {
-        margin-top: 100px;
         font-size: 1em;
         color: white;
     }

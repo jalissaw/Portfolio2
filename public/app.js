@@ -1,9 +1,13 @@
 const express = require('express'); 
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const emailPassword = process.env.EMAIL_PASSWORD
+ require('dotenv').config();
 
 const app = express();
+
+// app.use(express.static(__dirname + 'public'));
 app.use(express.static('../public'))
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -12,11 +16,9 @@ app.get('/', (req, res) => {
 })
 
 app.post('/userdata', (req, res) => {
-    console.log(req.body)
     const name = req.body.name
     const email = req.body.email
     const message = req.body.message
-    console.log(name, email, message)
     
     async function main() {
         
@@ -26,7 +28,7 @@ app.post('/userdata', (req, res) => {
           secure: false, 
           auth: {
             user: 'jalissaw32', 
-            pass: 'Winchester32@', 
+            pass: `${process.env.EMAIL_PASSWORD}`, 
           },
           
           tls: {
@@ -36,15 +38,12 @@ app.post('/userdata', (req, res) => {
       
     
         let info = await transporter.sendMail({
-          from: '"Nodemailer"', 
+          from: '"Portfolio Website"', 
           to: "jalissa_williams@yahoo.com", 
-          subject: `From Nodemailer: ${name}`,
-          text: "What is up?", 
-          html: `${message}`, 
+          subject: `${name}, ${email}`,
+          text: `${name}`,
+          html: `${message}, ${email}`,
         });
-      
-        console.log("Message sent: %s", info.messageId);
-        console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
         
       }
       
