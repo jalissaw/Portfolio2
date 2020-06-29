@@ -72,6 +72,10 @@ footer {
                 width: 100%;
                 margin-bottom: 10px;
                 padding-left: 10px;
+
+                @media #{$form} {
+                    max-width: 70%;
+                 }
             }
         }
 
@@ -84,6 +88,10 @@ footer {
 
             @media #{$allphones} {
                 height: 200px;
+            }
+
+            @media #{$form} {
+               max-width: 70%;
             }
         }
 

@@ -682,6 +682,12 @@ footer .contact form .iform {
   padding-left: 10px;
 }
 
+@media (min-width: 1400px) {
+  footer .contact form .iform {
+    max-width: 70%;
+  }
+}
+
 footer .contact #message {
   height: 275px;
   width: 100%;
@@ -693,6 +699,12 @@ footer .contact #message {
 @media (min-width: 200px) and (max-width: 415px) {
   footer .contact #message {
     height: 200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  footer .contact #message {
+    max-width: 70%;
   }
 }
 
