@@ -175,8 +175,7 @@ main {
 
                 @media #{$laptop} {
                     height: 80%;
-                   
-                }
+                   }
                 
       
 
@@ -190,31 +189,37 @@ main {
 
                 @media #{$laptop} {
                     height: 60%;
-                    width: 100%;
-                    zoom: 0.8;
+                    width: 50%;
+                    zoom: 0.7;
                 }
 
-                @media #{$tablets} {
-                    height: 40%;
+                @media #{$mtablets} {
+                    height: 50%;
+                    width: 50%;
+                    zoom: 0.6;
+                }
+
+                @media #{$stablets} {
+                    height: 30%;
                     width: 100%;
-                    zoom: 0.8;
+                    zoom: 0.65;
                 }
 
                 @media #{$lphones} {
-                    height: 50%;
+                    height: 30%;
                     width: 100%;
-                    zoom: 0.8;
+                    zoom: 0.6;
                 }
 
                 @media #{$mphones} {
-                    height: 50%;
+                    height: 35%;
                     width: 100%;
-                    zoom: 0.65;
+                    zoom: 0.6;
                 }
                 @media #{$sphones} {
-                    height: 50%;
+                    height: 30%;
                     width: 100%;
-                    zoom: 0.65;
+                    zoom: 0.6;
                 }
                 
                 .airimg {
@@ -225,20 +230,24 @@ main {
 
                     @media #{$sphones} {
                         height: 60%;
-                        width: 70%;
+                        width: 75%;
                     }
 
                     @media #{$mphones} {
-                        height: 60%;
-                        width: 80%;
+                        height: 55%;
+                        width: 70%;
                     }
 
                     @media #{$lphones} {
-                        height: 60%;
-                        width: 80%;
-                    }
-                    @media #{$tablets} {
                         height: 70%;
+                        width: 65%;
+                    }
+                    @media #{$mtablets} {
+                        height: 60%;
+                        width: 70%;
+                    }
+                    @media #{$stablets} {
+                        height: 60%;
                         width: 60%;
                     }
                     @media #{$laptop} {
