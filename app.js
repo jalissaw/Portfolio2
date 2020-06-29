@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 })
 
-app.post('/jalissawilliams.com', (req, res) => {
+app.post('/', (req, res) => {
     const name = req.body.name
     const email = req.body.email
     const message = req.body.message
@@ -47,7 +47,7 @@ app.post('/jalissawilliams.com', (req, res) => {
       }
       
       main().catch(console.error);
-    setTimeout((function() {res.redirect('jalissawilliams.com')}), 2500);
+    setTimeout((function() {res.redirect('/')}), 2500);
 })
 
 

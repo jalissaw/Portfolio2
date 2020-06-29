@@ -18,5 +18,5 @@ xhr.onload = () => {
     });
 }
 
-xhr.open('POST', 'jalissawilliams.com', true)
+xhr.open('POST', '/', true)
 xhr.send()
