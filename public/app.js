@@ -7,7 +7,6 @@ const emailPassword = process.env.EMAIL_PASSWORD
 
 const app = express();
 
-// app.use(express.static(__dirname + 'public'));
 app.use(express.static('../public'))
 app.use(bodyParser.urlencoded({extended: true}));
 
