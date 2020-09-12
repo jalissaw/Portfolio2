@@ -8,7 +8,6 @@
   height: 10vh;
   width: 100%;
   overflow: hidden;
-  background: #5872c9;
   -webkit-transition: ease 0.8s all;
   transition: ease 0.8s all;
 }
@@ -140,11 +139,6 @@
           transform: translateX(20px);
   -webkit-transition: ease-in all 0.4s;
   transition: ease-in all 0.4s;
-}
-
-.shownav .showlinks .showlink:hover ~ .showlink {
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
 }
 
 .shownav .showlinks .showlink a {
