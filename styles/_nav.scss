@@ -32,7 +32,8 @@
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                color: black;
+                color: $primary-color;
+                font-weight: bold;
                 padding: 8px;
                 transition: ease-in 0.4s all;
              
@@ -67,6 +68,10 @@
             width: 40px;
             z-index: 5;
             opacity: 0;
+
+            &:hover {
+                cursor: pointer;
+             }
         }
 
         .hamburger {

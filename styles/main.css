@@ -48,7 +48,8 @@
 .nav .links .link a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #5872c9;
+  font-weight: bold;
   padding: 8px;
   -webkit-transition: ease-in 0.4s all;
   transition: ease-in 0.4s all;
@@ -84,6 +85,10 @@
   width: 40px;
   z-index: 5;
   opacity: 0;
+}
+
+.menu .toggle:hover {
+  cursor: pointer;
 }
 
 .menu .hamburger {
@@ -241,31 +246,32 @@ main .areas .card {
           flex-direction: column;
   height: 250px;
   width: 300px;
-  background: black;
+  background: #5872c9;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 20px;
   border-radius: 5px;
-  -webkit-box-shadow: #5872c9 2px 2px 2px;
-          box-shadow: #5872c9 2px 2px 2px;
+  -webkit-box-shadow: black 2px 2px 5px;
+          box-shadow: black 2px 2px 5px;
 }
 
 main .areas .fas {
   font-size: 2.2em;
   margin-bottom: 15px;
-  color: #5872c9;
+  color: white;
 }
 
 main .areas .cardtitle {
   font-size: 1.5em;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 main .areas .infotxt {
   width: 75%;
   margin-top: 10px;
   font-size: 1em;
+  color: white;
 }
 
 main .areas .mobile {
@@ -460,7 +466,7 @@ main .projects .cardprojects .cardproject .push button {
   border: none;
   color: white;
   border: solid 2px white;
-  background: black;
+  background: #5872c9;
   text-transform: uppercase;
   font-size: 100%;
   margin-top: 15px;
@@ -470,7 +476,7 @@ main .projects .cardprojects .cardproject .push button {
 }
 
 main .projects .cardprojects .cardproject .push button:hover {
-  background: #5872c9;
+  background: black;
   cursor: pointer;
 }
 
@@ -728,7 +734,6 @@ html {
 header {
   height: 100vh;
   width: 100%;
-  background: #5872c9;
 }
 
 header .heading {
@@ -816,6 +821,7 @@ header .heading .header .name {
   text-transform: uppercase;
   padding: 0px 5px;
   font-size: 1.5em;
-  color: white;
+  font-weight: bold;
+  color: #5872c9;
 }
 /*# sourceMappingURL=main.css.map */
