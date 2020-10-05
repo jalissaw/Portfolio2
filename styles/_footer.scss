@@ -53,7 +53,7 @@ footer {
            flex-direction: column;
            justify-content: center;
            align-items: center;
-           width: 50%;
+           width: 800px;
 
            @media #{$allphones} {
             width: 75%;
@@ -64,30 +64,35 @@ footer {
         }
 
             @media #{$laptop} {
-            width: 75%;
+            width: 800px;
         }
            
            .iform {
                 height: 50px;
-                width: 100%;
+                width: 75%;
                 margin-bottom: 10px;
                 padding-left: 10px;
 
+                @media #{$allphones} {
+                    width: 100%;
+                }
+
                 @media #{$form} {
-                    max-width: 70%;
+                    max-width: 85%;
                  }
             }
         }
 
         #message {
             height: 275px;
-            width: 100%;
+            width: 75%;
             resize: vertical;
             padding-left: 10px;
             padding-top: 10px;
 
             @media #{$allphones} {
                 height: 200px;
+                width: 100%;
             }
 
             @media #{$form} {
@@ -102,7 +107,7 @@ footer {
 
         .submit {
             height: 50px;
-            width: 50%;
+            width: 150px;
             font-size: 1.3em;
             background: $primary-color;
             border: none;

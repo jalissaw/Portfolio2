@@ -34,7 +34,7 @@
   font-size: 1.5em;
 }
 
-@media (min-width: 479px) and (max-width: 829px) {
+@media (min-width: 479px) and (max-width: 850px) {
   .nav .links .link {
     display: none;
   }
@@ -48,7 +48,6 @@
 
 .nav .links .link a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #5872c9;
   font-weight: bold;
   padding: 8px;
@@ -58,7 +57,7 @@
 
 .nav .links .link a:hover {
   color: white;
-  background: black;
+  background: #5872c9;
   border-radius: 4px;
 }
 
@@ -121,7 +120,7 @@
           align-items: center;
   height: 100vh;
   width: 0;
-  background: black;
+  background: white;
   opacity: 0;
   -webkit-transition: ease 0.4s all;
   transition: ease 0.4s all;
@@ -140,7 +139,6 @@
 .shownav .showlinks .showlink {
   margin: 20px 0px;
   font-size: 2em;
-  text-transform: uppercase;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   -webkit-transition: ease-in all 0.4s;
@@ -148,7 +146,7 @@
 }
 
 .shownav .showlinks .showlink a {
-  color: white;
+  color: #5872c9;
   text-decoration: none;
 }
 
@@ -528,7 +526,7 @@ footer .contact .contacttitle {
   }
 }
 
-@media (min-width: 479px) and (max-width: 829px) {
+@media (min-width: 479px) and (max-width: 850px) {
   footer .contact .contacttitle {
     margin-bottom: 50px;
   }
@@ -572,7 +570,7 @@ footer .contact form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 800px;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -581,7 +579,7 @@ footer .contact form {
   }
 }
 
-@media (min-width: 479px) and (max-width: 829px) {
+@media (min-width: 479px) and (max-width: 850px) {
   footer .contact form {
     width: 75%;
   }
@@ -589,26 +587,32 @@ footer .contact form {
 
 @media (min-width: 830px) and (max-width: 10000px) {
   footer .contact form {
-    width: 75%;
+    width: 800px;
   }
 }
 
 footer .contact form .iform {
   height: 50px;
-  width: 100%;
+  width: 75%;
   margin-bottom: 10px;
   padding-left: 10px;
 }
 
+@media (min-width: 200px) and (max-width: 480px) {
+  footer .contact form .iform {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1400px) {
   footer .contact form .iform {
-    max-width: 70%;
+    max-width: 85%;
   }
 }
 
 footer .contact #message {
   height: 275px;
-  width: 100%;
+  width: 75%;
   resize: vertical;
   padding-left: 10px;
   padding-top: 10px;
@@ -617,6 +621,7 @@ footer .contact #message {
 @media (min-width: 200px) and (max-width: 480px) {
   footer .contact #message {
     height: 200px;
+    width: 100%;
   }
 }
 
@@ -648,7 +653,7 @@ footer .contact ::placeholder {
 
 footer .contact .submit {
   height: 50px;
-  width: 50%;
+  width: 150px;
   font-size: 1.3em;
   background: #5872c9;
   border: none;
@@ -820,7 +825,7 @@ header .heading .header .hello {
   }
 }
 
-@media (min-width: 479px) and (max-width: 829px) {
+@media (min-width: 479px) and (max-width: 850px) {
   header .heading .header .hello {
     font-size: 9em;
   }
