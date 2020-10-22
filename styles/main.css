@@ -86,6 +86,7 @@
   width: 40px;
   z-index: 10;
   opacity: 0;
+  cursor: pointer;
 }
 
 .menu .toggle:hover {
