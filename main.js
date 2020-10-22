@@ -1,4 +1,5 @@
 const toggle = document.querySelector('.toggle');
+const hamburger = document.querySelector('.hamburger');
 const showMenu = document.querySelector('.shownav');
 const aboutSect = document.querySelector('.about');
 const titles = document.querySelectorAll('h2');
@@ -6,17 +7,6 @@ const showLink = document.querySelectorAll('.shownav a');
 
 
 // toggle window open and close
-window.addEventListener('scroll', () =>{
-    const position = aboutSect.getBoundingClientRect().top;
-    const screen = window.innerHeight / 2.5;
-
-    if (screen > position) {
-        toggle.style.cursor = 'pointer'
-    } else {
-        toggle.style.cursor = 'auto'
-    }
-})
-
 
 toggle.addEventListener('click', () => {
     showMenu.classList.toggle('open');
