@@ -4,6 +4,8 @@ const aboutSect = document.querySelector('.about');
 const titles = document.querySelectorAll('h2');
 const showLink = document.querySelectorAll('.shownav a');
 
+
+// toggle window open and close
 window.addEventListener('scroll', () =>{
     const position = aboutSect.getBoundingClientRect().top;
     const screen = window.innerHeight / 2.5;
@@ -20,8 +22,6 @@ toggle.addEventListener('click', () => {
     showMenu.classList.toggle('open');
 });
 
-
-    
     for(var i = 0; i < showLink.length; i++) {
         
         showLink[i].addEventListener('click', () => {
@@ -31,7 +31,7 @@ toggle.addEventListener('click', () => {
 
 
 
-
+//transition titles in
 function scrolled () {
     for (var i = 0; i < titles.length; i++) {
     const position = titles[i].getBoundingClientRect().top;
@@ -50,14 +50,16 @@ window.addEventListener('scroll', scrolled);
 const tabs = document.querySelectorAll('[data-tab]')
 const filteredTabs = document.querySelectorAll('[data-filter]')
 
+
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
        tabs.forEach(tab => {
            tab.classList.remove('active')
        })
        tab.classList.add('active')
-
-       const tabFiltered = tab.dataset.tab;
+        //get attr of li
+      const tabFiltered = tab.dataset.tab;
+      //display each tab on click of li
       filteredTabs.forEach(filterTab => {
           filterTab.style.display = 'none'
          if(tabFiltered === filterTab.dataset.filter || tabFiltered === 'all') {
@@ -68,9 +70,3 @@ tabs.forEach(tab => {
       })
     })
 });
-
-// filteredTabs.forEach(filteredTab => {
-//     if(filteredTab === 'react') {
-//         console.log('react')
-//     }
-// })
