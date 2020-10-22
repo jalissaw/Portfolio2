@@ -23,7 +23,7 @@
             <ul class="showlinks">
                 <li class="showlink"><a href="#home">Home</a></li>
                 <li class="showlink"><a href="#about">About</a></li>
-                <li class="showlink"><a href="projects.html">Projects</a></li>
+                <li class="showlink"><a href="#projects">Projects</a></li>
                 <li class="showlink"><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -31,44 +31,52 @@
             <ul class="links">
                 <li class="link"><a href="#home">Home</a></li>
                 <li class="link"><a href="#about">About</a></li>
-                <li class="link"><a href="projects.html">Projects</a></li>
+                <li class="link"><a href="#projects">Projects</a></li>
                 <li class="link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="heading" id="home">
             <div class="header">
-                <span class="hello">Hello</span>
-                <p class="intro">I'm<span class="name">Jalissa Williams</span>, a Front End Engineer who focuses on the visuals and commits to making your vision reality!</p>
+                <!-- <span class="hello">Hello</span> -->
+                <h1 class="intro">I'm<span class="name">Jalissa Williams</span>, a Front End Engineer who focuses on the visuals and commits to making your vision reality!</h1>
             </div>
         </div>
     </header>
 
     <main>
         <div class="about" id="about">
-            <h2 class="aboutme">About Me</h2>
+            <h2 class="aboutme"><span>A</span>bout Me</h2>
             <p class="info">
-                A self taught developer who likes to keep it simple!
+                I am a developer who likes to keep it simple!
              </p>
         </div>
 
         <div class="areas">
             <div class="code card">
-                <i class="fas fa-code"></i>
+                <div class="containfas">
+                    <i class="fas fa-code"></i>
+                </div>
                 <h3 class="cleancode cardtitle">Clean Code</h3>
                 <p class="codeinfo infotxt">Neat, compact code for easy navigation</p>
             </div>
             <div class="mobile card">
-                <i class="fas fa-mobile"></i>
+                <div class="containfas">
+                    <i class="fas fa-mobile"></i>
+                </div>
                 <h3 class="design cardtitle">Design</h3>
                 <p class="designinfo infotxt">Responsive, sleek, user friendly designs</p>
             </div>
             <div class="innovative card">
-                <i class="fas fa-lightbulb"></i>
+                <div class="containfas">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
                 <h3 class="ideainfo cardtitle">Innovative</h3>
                 <p class="ideainfo infotxt">Always positive, always thinking of ideas</p>
             </div>
             <div class="mobile card">
-                <i class="fas fa-comments"></i>
+                <div class="containfas">
+                    <i class="fas fa-comments"></i>
+                </div>
                 <h3 class="communicative cardtitle">Communicative</h3>
                 <p class="comms infotxt">Gaining knowledge is the key to growth</p>
             </div>
@@ -76,18 +84,120 @@
         <div class="skillset">
             <div class="webdev sect">
                 <h3 class="skills skilltitle">Web Development</h3>
-                <p class="skill skillslist">HTML5 CSS SASS Javascript NodeJS JSON APIs Express MongoDB Github VSCode</p>
+                <ul class="listofskillsweb listofskills">
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>APIs</li>
+                    <li>JSON</li>
+                    <li>Github</li>
+                    <li>VSCode</li>
+                </ul>
             </div>
             <div class="content sect">
                 <h3 class="manage skilltitle">Content Management</h3>
-                <p class="managelist skillslist">Google Analytics Google Ads SEO Copywriting E-Mail Marketing Bronto Magento Wix Adobe Photoshop Premiere Pro</p>
+                <ul class="listofskillscontent listofskills">
+                    <li>Google Analytics</li>
+                    <li>Google Ads</li>
+                    <li>SEO</li>
+                    <li>Copywriting</li>
+                    <li>Email Marketing</li>
+                    <li>Bronto</li>
+                    <li>Magento</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2 class="projecttitle"><span>P</span>rojects</h2>
+            <div class="sectiontabs">
+                <ul class="tabs">
+                    <li class="active" data-tab="all">All</li>
+                    <li data-tab="javascript">Javascript</li>
+                    <li data-tab="react">React</li>
+                </ul>
+            </div>
+            <div class="cardprojects">
+                <div class="cardproject" data-content="all" data-filter="javascript">
+                    <img src="img/20Something.gif" class="airimg podcastwebsite" alt="gif of website 20somethingandliving podcast">
+                    <div class="hovered">
+                        <p class="imgdescript">Redesigning and building a website from scratch. It's a work in progress</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/20Something"><button class="source">Source Code</button></a>
+                            <a href="https://jalissaw.github.io/20Something/"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardproject" data-content="all" data-filter="javascript">
+                    <img src="img/prosperity.gif" class="airimg" alt="A gif of a website">
+                    <div class="hovered">
+                        <p class="imgdescript">A website about built and designed from scratch by me</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/Prosperity"><button class="source">Source Code</button></a>
+                            <a href="https://peservicesllc.net"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardproject" data-content="all" data-filter="javascript">
+                    <img src="img/stock.gif" class="airimg stock" alt="gif of a website displaying stock symbols">
+                    <div class="hovered">
+                        <p class="imgdescript">A stock app built using APIs that displays information on stocks!</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/StockApp"><button class="source">Source Code</button></a>
+                            <a href="https://jalissaw.github.io/StockApp/"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardproject" data-content="all" data-filter="javascript">
+                    <img src="img/elmore.gif" class="airimg" alt="red and black airplane website gif">
+                    <div class="hovered">
+                        <p class="imgdescript">A portofolio built using HTML, SASS, Javascript</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/AirplanePortfolio"><button class="source">Source Code</button></a>
+                            <a href="https://jalissaw.github.io/AirplanePortfolio/"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardproject" data-content="all" data-filter="react">
+                    <img src="img/budget.gif" class="airimg" alt="A Budget Calculator gif">
+                    <div class="hovered">
+                        <p class="imgdescript">A react budget calculator</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/BudgetCalc/tree/gh-pages/static"><button class="source">Source Code</button></a>
+                            <a href="https://jalissaw.github.io/BudgetCalc/"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardproject" data-content="all" data-filter="react">
+                    <img src="img/nutrition.gif" class="airimg" alt="A Nutrition App gif">
+                    <div class="hovered">
+                        <p class="imgdescript">A react nutrition app</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/Nutrition/tree/gh-pages/static"><button class="source">Source Code</button></a>
+                            <a href="https://jalissaw.github.io/Nutrition/"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardproject" data-content="all" data-filter="react">
+                    <img src="img/options.gif" class="airimg" alt="A Options App gif">
+                    <div class="hovered">
+                        <p class="imgdescript">I needed something to keep track of trades so I created a options calculator that keeps track of those trades</p>
+                        <div class="push">
+                            <a href="https://github.com/jalissaw/Options/tree/gh-pages/static/js"><button class="source">Source Code</button></a>
+                            <a href="https://jalissaw.github.io/Options/"><button class="web">Website</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="contact" id="contact">
-            <h2 class="contacttitle">Contact Me</h2>
+            <h2 class="contacttitle"><span>C</span>ontact Me</h2>
             <h3 class="contactmessage">Let's make your vision, reality</h3>
             <h3 class="errorMessage"></h3>
             <form method="POST" data-netlify="true" class="form" action="/" netlify-honeypot="bot-field">
@@ -100,8 +210,8 @@
 
         <div class="contactinfo">
             <div class="contacticons">
-                <a href="https://www.linkedin.com/in/jalissa-williams-30a013122/"><i class="fab fa-linkedin"></i></i></a>
-                <a href="https://github.com/jalissaw"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jalissa-williams-30a013122/" title="LinkedIn"><i class="fab fa-linkedin"></i></i></a>
+                <a href="https://github.com/jalissaw" title="Github"><i class="fab fa-github"></i></a>
             </div>
             <div class="copy">
                 <h2 class="footername">Jalissa Williams &copy2020</h2>

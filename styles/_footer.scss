@@ -8,15 +8,26 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding-bottom: 60px;
+        background: rgb(30, 31, 32);
 
         .contacttitle {
             text-align: center;
             text-transform: uppercase;
             font-size: 2em;
-            margin-bottom: 100px;
+            margin-bottom: 60px;
             transition: ease 0.4s all;
             transform: translateX(20px);
             opacity: 0;
+            color: white;
+            padding-top: 45px;
+
+            span {
+                color: $primary-color;
+                font-size: 3rem;
+                letter-spacing: 1.5px;
+            }
+    
 
             @media #{$allphones} {
                 margin-bottom: 50px;
@@ -72,6 +83,10 @@ footer {
                 width: 75%;
                 margin-bottom: 10px;
                 padding-left: 10px;
+                border: none;
+                border-bottom: 1px solid $primary-color;
+                background: transparent;
+                color: white;
 
                 @media #{$allphones} {
                     width: 100%;
@@ -89,6 +104,9 @@ footer {
             resize: vertical;
             padding-left: 10px;
             padding-top: 10px;
+            margin-top: 25px;
+            border: 1px solid $primary-color;
+            background: transparent;
 
             @media #{$allphones} {
                 height: 200px;
@@ -101,7 +119,7 @@ footer {
         }
 
         ::placeholder {
-            color: black;
+            color: white;
             font-size: 1.5em;
         }
 
@@ -117,7 +135,8 @@ footer {
             transition: ease-in-out 0.4s all;
 
             &:hover {
-               background: black;
+               background: white;
+               color: $primary-color;
                cursor: pointer;
             }
         }
@@ -128,21 +147,20 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 0px;
+        padding: 50px 0px;
         width: 100%;
-        background: black;
-        margin-top: 20px;
+        background: $primary-color;
     
         .contacticons {
         text-align: center;
 
             .fab {
-                color: $primary-color;
+                color: white;
                 font-size: 3em;
                 transition: ease-in 0.3s all;
 
                 &:hover {
-                    color: white;
+                    color: rgb(30, 31, 32);
                 }
             }
 

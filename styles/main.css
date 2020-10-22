@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Patua+One&family=Ramabhadra&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bowlby+One+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bellota:ital@1&family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kite+One&family=Lalezar&family=Rubik&display=swap");
 .nav {
   position: absolute;
   top: 0;
@@ -72,7 +73,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 20px;
+  top: 29px;
   left: 10px;
   height: 60px;
   width: 60px;
@@ -83,7 +84,7 @@
   position: absolute;
   height: 40px;
   width: 40px;
-  z-index: 5;
+  z-index: 10;
   opacity: 0;
 }
 
@@ -93,16 +94,29 @@
 
 .menu .hamburger {
   margin: auto 0;
-  height: 3px;
-  width: 28px;
+  height: 2px;
+  width: 40px;
   background: #5872c9;
+}
+
+.menu .hamburger:hover {
+  cursor: pointer;
 }
 
 .menu .hamburger::before {
   content: '';
   position: absolute;
-  top: 18px;
-  height: 3px;
+  top: 38px;
+  height: 2px;
+  width: 40px;
+  background: #5872c9;
+}
+
+.menu .hamburger::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  height: 2px;
   width: 40px;
   background: #5872c9;
 }
@@ -119,17 +133,22 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  width: 0;
+  width: 100%;
   background: white;
   opacity: 0;
   -webkit-transition: ease 0.4s all;
   transition: ease 0.4s all;
   z-index: 2;
+  -webkit-clip-path: circle(6.2% at 50% 50%);
+          clip-path: circle(6.2% at 50% 50%);
+  pointer-events: none;
 }
 
 .shownav.open {
-  width: 100%;
+  -webkit-clip-path: circle(70.7% at 50% 50%);
+          clip-path: circle(70.7% at 50% 50%);
   opacity: 1;
+  pointer-events: all;
 }
 
 .shownav .showlinks {
@@ -173,7 +192,14 @@ main .about {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding-top: 100px;
   width: 100%;
+}
+
+main .about span {
+  color: #5872c9;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -186,6 +212,7 @@ main .about .aboutme {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.3em;
+  color: #1e1f20;
   padding-top: 20px;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
@@ -220,7 +247,7 @@ main .areas {
       flex-wrap: wrap;
   text-align: center;
   width: 100%;
-  padding: 0px 20px;
+  padding: 20px 20px;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -245,17 +272,34 @@ main .areas .card {
           flex-direction: column;
   height: 250px;
   width: 300px;
-  background: #5872c9;
   text-align: center;
-  color: black;
+  color: #1e1f20;
   margin-top: 20px;
   border-radius: 5px;
-  -webkit-box-shadow: black 2px 2px 5px;
-          box-shadow: black 2px 2px 5px;
+}
+
+main .areas .containfas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5872c9;
+  padding: 10px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  height: 200px;
+  width: 55%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 main .areas .fas {
-  font-size: 2.2em;
+  font-size: 2.7em;
   margin-bottom: 15px;
   text-shadow: 1px 2px 2px black;
   color: white;
@@ -264,14 +308,14 @@ main .areas .fas {
 main .areas .cardtitle {
   font-size: 1.5em;
   text-transform: uppercase;
-  color: black;
+  color: #1e1f20;
 }
 
 main .areas .infotxt {
   width: 75%;
   margin-top: 10px;
   font-size: 1em;
-  color: white;
+  color: #1e1f20;
 }
 
 main .areas .mobile {
@@ -290,10 +334,6 @@ main .skillset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -324,8 +364,19 @@ main .skillset .sect {
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 300px;
   border-radius: 5px;
+  width: 500px;
+}
+
+main .skillset .listofskills {
+  list-style: none;
+}
+
+main .skillset .listofskills li {
+  font-size: 1rem;
+  background: #5872c9;
+  padding: 10px 15px;
+  margin: 10px 0px;
 }
 
 main .skillset .skilltitle {
@@ -359,6 +410,11 @@ main .projects {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding-bottom: 100px;
+}
+
+main .projects .active {
+  background: #5872c9;
 }
 
 main .projects .projecttitle {
@@ -371,13 +427,57 @@ main .projects .projecttitle {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   opacity: 0;
-  margin-top: 140px;
+  margin-top: 100px;
+  color: #1e1f20;
+}
+
+main .projects .projecttitle span {
+  color: #5872c9;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
 }
 
 main .projects .projecttitle.appear {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
+}
+
+main .projects .sectiontabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .projects .sectiontabs .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  border: solid 1px #1e1f20;
+  border-radius: 40px;
+}
+
+main .projects .sectiontabs .tabs li:nth-child(2) {
+  margin: 0px 10px;
+}
+
+main .projects .sectiontabs .tabs li {
+  font-size: 1.7rem;
+  padding: 10px 15px;
+  border-radius: 40px;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+  main .projects .sectiontabs .tabs li {
+    font-size: 1rem;
+  }
+}
+
+main .projects .sectiontabs .tabs li:hover {
+  cursor: pointer;
 }
 
 main .projects .cardprojects {
@@ -387,11 +487,17 @@ main .projects .cardprojects {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
 }
 
 main .projects .cardprojects .cardproject {
@@ -406,17 +512,22 @@ main .projects .cardprojects .cardproject {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 25px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 500px;
-          flex: 1 1 500px;
+  margin: 20px;
+  position: relative;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+main .projects .cardprojects .cardproject:hover .hovered {
+  opacity: 1;
 }
 
 main .projects .cardprojects .cardproject .airimg {
-  width: 75%;
-  height: 250px;
-  -webkit-box-shadow: 1.5px 1.5px 3px black;
-          box-shadow: 1.5px 1.5px 3px black;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  -webkit-box-shadow: 0.5px 0.5px 2px #1e1f20;
+          box-shadow: 0.5px 0.5px 2px #1e1f20;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   -webkit-transition: ease-in 0.3s all;
@@ -435,17 +546,41 @@ main .projects .cardprojects .cardproject .airimg:hover {
           filter: grayscale(0);
 }
 
+main .projects .cardprojects .cardproject .hovered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #1e1f20;
+  background: white;
+  opacity: 0;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
 main .projects .cardprojects .cardproject .imgdescript {
   margin-top: 10px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   width: 55%;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
   main .projects .cardprojects .cardproject .imgdescript {
     width: 80%;
-    font-size: 1.2em;
+    font-size: .8rem;
   }
 }
 
@@ -458,6 +593,8 @@ main .projects .cardprojects .cardproject .push {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: absolute;
+  bottom: 20px;
 }
 
 main .projects .cardprojects .cardproject .push button {
@@ -473,10 +610,18 @@ main .projects .cardprojects .cardproject .push button {
   text-align: center;
   -webkit-transition: ease-in 0.3s all;
   transition: ease-in 0.3s all;
+  border-radius: 40px;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+  main .projects .cardprojects .cardproject .push button {
+    width: 100px;
+    font-size: .7rem;
+  }
 }
 
 main .projects .cardprojects .cardproject .push button:hover {
-  background: black;
+  background: #1e1f20;
   cursor: pointer;
 }
 
@@ -506,18 +651,28 @@ footer .contact {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding-bottom: 60px;
+  background: #1e1f20;
 }
 
 footer .contact .contacttitle {
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   -webkit-transition: ease 0.4s all;
   transition: ease 0.4s all;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   opacity: 0;
+  color: white;
+  padding-top: 45px;
+}
+
+footer .contact .contacttitle span {
+  color: #5872c9;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -596,6 +751,10 @@ footer .contact form .iform {
   width: 75%;
   margin-bottom: 10px;
   padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid #5872c9;
+  background: transparent;
+  color: white;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -616,6 +775,9 @@ footer .contact #message {
   resize: vertical;
   padding-left: 10px;
   padding-top: 10px;
+  margin-top: 25px;
+  border: 1px solid #5872c9;
+  background: transparent;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -632,22 +794,22 @@ footer .contact #message {
 }
 
 footer .contact ::-webkit-input-placeholder {
-  color: black;
+  color: white;
   font-size: 1.5em;
 }
 
 footer .contact :-ms-input-placeholder {
-  color: black;
+  color: white;
   font-size: 1.5em;
 }
 
 footer .contact ::-ms-input-placeholder {
-  color: black;
+  color: white;
   font-size: 1.5em;
 }
 
 footer .contact ::placeholder {
-  color: black;
+  color: white;
   font-size: 1.5em;
 }
 
@@ -665,7 +827,8 @@ footer .contact .submit {
 }
 
 footer .contact .submit:hover {
-  background: black;
+  background: white;
+  color: #5872c9;
   cursor: pointer;
 }
 
@@ -683,10 +846,9 @@ footer .contactinfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px;
+  padding: 50px 0px;
   width: 100%;
-  background: black;
-  margin-top: 20px;
+  background: #5872c9;
 }
 
 footer .contactinfo .contacticons {
@@ -694,14 +856,14 @@ footer .contactinfo .contacticons {
 }
 
 footer .contactinfo .contacticons .fab {
-  color: #5872c9;
+  color: white;
   font-size: 3em;
   -webkit-transition: ease-in 0.3s all;
   transition: ease-in 0.3s all;
 }
 
 footer .contactinfo .contacticons .fab:hover {
-  color: white;
+  color: #1e1f20;
 }
 
 footer .contactinfo .contacticons .fa-github {
@@ -762,7 +924,7 @@ footer .footername {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Bellota;
+  font-family: Bree Serif;
 }
 
 html {
@@ -772,6 +934,7 @@ html {
 header {
   height: 100vh;
   width: 100%;
+  background: #1e1f20;
 }
 
 header .heading {
@@ -851,8 +1014,9 @@ header .heading .header .hello {
 
 header .heading .header .intro {
   font-size: 2em;
-  width: 75%;
-  color: black;
+  width: 60%;
+  color: white;
+  letter-spacing: 1px;
 }
 
 header .heading .header .name {
@@ -861,5 +1025,6 @@ header .heading .header .name {
   font-size: 1.5em;
   font-weight: bold;
   color: #5872c9;
+  font-family: Rubik;
 }
 /*# sourceMappingURL=main.css.map */

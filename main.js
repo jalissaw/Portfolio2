@@ -43,3 +43,34 @@ function scrolled () {
 }
 
 window.addEventListener('scroll', scrolled);
+
+
+//filtered tabs
+
+const tabs = document.querySelectorAll('[data-tab]')
+const filteredTabs = document.querySelectorAll('[data-filter]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+       tabs.forEach(tab => {
+           tab.classList.remove('active')
+       })
+       tab.classList.add('active')
+
+       const tabFiltered = tab.dataset.tab;
+      filteredTabs.forEach(filterTab => {
+          filterTab.style.display = 'none'
+         if(tabFiltered === filterTab.dataset.filter || tabFiltered === 'all') {
+                filterTab.classList.add('transition');
+                filterTab.style.display = 'flex';
+          
+         }
+      })
+    })
+});
+
+// filteredTabs.forEach(filteredTab => {
+//     if(filteredTab === 'react') {
+//         console.log('react')
+//     }
+// })
