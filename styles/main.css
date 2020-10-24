@@ -779,6 +779,7 @@ footer .contact #message {
   margin-top: 25px;
   border: 1px solid #5872c9;
   background: transparent;
+  color: white;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
