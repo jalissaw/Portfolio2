@@ -126,7 +126,7 @@ main {
         align-items: center;
         text-align: center;
         flex-wrap: wrap;
-        margin-top: 20px;
+        margin-top: 50px;
         width: 100%;
 
         .sect {
@@ -138,7 +138,7 @@ main {
             flex-wrap: wrap;
             border-radius: 5px;
             width: 500px;
-
+            padding-top: 50px;
             
         }
 
@@ -191,7 +191,7 @@ main {
             transition: ease 0.4s all;
             transform: translateX(20px);
             opacity: 0;
-            margin-top: 100px;
+            margin-top: 75px;
             color: rgb(30, 31, 32);
 
             span {
