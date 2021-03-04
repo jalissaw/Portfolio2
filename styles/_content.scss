@@ -296,6 +296,10 @@ main {
                         text-transform: uppercase;
                         border-bottom: 1px solid $primary-color;
                         border-top: 1px solid $primary-color;
+
+                        @media #{$allphones} {
+                            font-size: 1.1rem;
+                        }
                     }
 
                     .imgdescript {
