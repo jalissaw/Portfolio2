@@ -276,7 +276,7 @@ main .areas .card {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100px;
+  height: 250px;
   width: 300px;
   text-align: center;
   color: #1e1f20;
@@ -294,7 +294,7 @@ main .areas .containfas {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
-  height: 200px;
+  height: 100px;
   width: 55%;
 }
 
@@ -309,6 +309,7 @@ main .areas .cardtitle {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #1e1f20;
+  border-bottom: 1.5px solid #5872c9;
 }
 
 main .areas .infotxt {
@@ -320,7 +321,7 @@ main .areas .infotxt {
 
 @media (min-width: 0px) and (max-width: 480px) {
   main .areas .infotxt {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1009,7 +1010,7 @@ header .heading .header .intro {
 
 @media (min-width: 0px) and (max-width: 480px) {
   header .heading .header .intro {
-    font-size: 1.2rem;
+    font-size: 1.45rem;
     width: 100%;
     padding: 0 35px;
   }
