@@ -39,22 +39,24 @@ header{
             margin-top: 100px;
 
             @media #{$mphones} {
-                font-size: 0.9em;
+                font-size: 0.9rem;
             }
             @media #{$sphones} {
-                font-size: 0.8em;
+                font-size: 0.8rem;
             }
             
 
             .intro {
-                font-size: 2em;
+                font-size: 2rem;
                 width: 60%;
                 color: white;
                 letter-spacing: 1px;
+                font-weight: 100;
 
                 @media #{$allphones} {
-                    font-size: 1.35em;
-                    width: 70%;
+                    font-size: 1.2rem;
+                    width: 100%;
+                    padding: 0 35px;
                 }
 
             }
@@ -62,10 +64,14 @@ header{
             .name {
                 text-transform: uppercase;
                 padding: 0px 5px;
-                font-size: 1.5em;
+                font-size: 3.5rem;
                 font-weight: bold;
                 color: $primary-color;
                 font-family: Rubik;
+
+                @media #{$allphones} {
+                    font-size: 1.5rem;
+                }
                 
             }
         }

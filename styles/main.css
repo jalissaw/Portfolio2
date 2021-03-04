@@ -984,36 +984,44 @@ header .heading .header {
 
 @media (min-width: 321px) and (max-width: 374px) {
   header .heading .header {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 320px) {
   header .heading .header {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
 
 header .heading .header .intro {
-  font-size: 2em;
+  font-size: 2rem;
   width: 60%;
   color: white;
   letter-spacing: 1px;
+  font-weight: 100;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   header .heading .header .intro {
-    font-size: 1.35em;
-    width: 70%;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 35px;
   }
 }
 
 header .heading .header .name {
   text-transform: uppercase;
   padding: 0px 5px;
-  font-size: 1.5em;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #5872c9;
   font-family: Rubik;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  header .heading .header .name {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
