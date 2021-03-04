@@ -233,6 +233,12 @@ main .about .info {
   letter-spacing: 1px;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  main .about .info {
+    width: 80%;
+  }
+}
+
 main .areas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,52 +994,18 @@ header .heading .header {
   }
 }
 
-header .heading .header .hello {
-  position: absolute;
-  top: 18%;
-  left: 10%;
-  font-size: 250px;
-  color: transparent;
-  letter-spacing: 12px;
-  -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: black;
-}
-
-@media (min-width: 830px) and (max-width: 10000px) {
-  header .heading .header .hello {
-    font-size: 12em;
-  }
-}
-
-@media (min-width: 479px) and (max-width: 850px) {
-  header .heading .header .hello {
-    font-size: 9em;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 480px) {
-  header .heading .header .hello {
-    font-size: 7em;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 374px) {
-  header .heading .header .hello {
-    font-size: 7em;
-  }
-}
-
-@media (max-width: 320px) {
-  header .heading .header .hello {
-    font-size: 6em;
-  }
-}
-
 header .heading .header .intro {
   font-size: 2em;
   width: 60%;
   color: white;
   letter-spacing: 1px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  header .heading .header .intro {
+    font-size: 1.35em;
+    width: 70%;
+  }
 }
 
 header .heading .header .name {

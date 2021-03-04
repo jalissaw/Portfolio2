@@ -46,39 +46,16 @@ header{
             }
             
 
-            .hello {
-                position: absolute;
-                top: 18%;
-                left: 10%;
-                font-size: 250px;
-                color: transparent;
-                letter-spacing: 12px;
-                -webkit-text-stroke-width: 5px;
-                -webkit-text-stroke-color: black;
-
-                @media #{$laptop} {
-                    font-size: 12em;
-                }
-                @media #{$tablets} {
-                    font-size: 9em;
-                }
-                @media #{$lphones} {
-                    font-size: 7em;
-                }
-                @media #{$mphones} {
-                    font-size: 7em;
-                }
-                @media #{$sphones} {
-                    font-size: 6em;
-                }
-               
-            }
-
             .intro {
                 font-size: 2em;
                 width: 60%;
                 color: white;
                 letter-spacing: 1px;
+
+                @media #{$allphones} {
+                    font-size: 1.35em;
+                    width: 70%;
+                }
 
             }
 

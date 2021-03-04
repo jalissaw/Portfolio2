@@ -45,6 +45,10 @@ main {
             font-size: 1.2em;
             font-weight: 500;
             letter-spacing: 1px;
+
+            @media #{$allphones} {
+                width: 80%;
+            }
         }
     }
 
