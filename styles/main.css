@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .nav .links .link {
     display: none;
   }
@@ -202,7 +202,7 @@ main .about span {
   letter-spacing: 1.5px;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .about {
     padding: 0px 20px;
   }
@@ -250,7 +250,7 @@ main .areas {
   padding: 20px 20px;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .areas {
     padding: 0px 20px;
   }
@@ -288,21 +288,16 @@ main .areas .containfas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #5872c9;
-  padding: 10px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
+  padding: 5px;
   height: 200px;
   width: 55%;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 main .areas .fas {
   font-size: 2.7em;
   margin-bottom: 15px;
   text-shadow: 1px 2px 2px black;
-  color: white;
+  color: #5872c9;
 }
 
 main .areas .cardtitle {
@@ -323,7 +318,7 @@ main .areas .mobile {
   margin-left: 15px;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .areas .mobile {
     margin-right: 0px;
     margin-left: 0px;
@@ -374,9 +369,7 @@ main .skillset .listofskills {
 }
 
 main .skillset .listofskills li {
-  font-size: 1rem;
-  background: #5872c9;
-  padding: 10px 15px;
+  font-size: 1.2rem;
   margin: 10px 0px;
 }
 
@@ -387,7 +380,7 @@ main .skillset .skilltitle {
   color: #5872c9;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .skillset .skilltitle {
     padding: 0px 15px;
   }
@@ -471,7 +464,7 @@ main .projects .sectiontabs .tabs li {
   transition: ease 0.4s;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .projects .sectiontabs .tabs li {
     font-size: 1rem;
   }
@@ -532,7 +525,7 @@ main .projects .cardprojects .cardproject .airimg {
   transition: ease-in 0.3s all;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .projects .cardprojects .cardproject .airimg {
     height: 210px;
     width: 90%;
@@ -574,6 +567,12 @@ main .projects .cardprojects .cardproject .hovered .project-title {
   border-top: 1px solid #5872c9;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  main .projects .cardprojects .cardproject .hovered .project-title {
+    font-size: 1.1rem;
+  }
+}
+
 main .projects .cardprojects .cardproject .hovered .imgdescript {
   margin-top: 10px;
   text-align: center;
@@ -581,7 +580,7 @@ main .projects .cardprojects .cardproject .hovered .imgdescript {
   width: 80%;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .projects .cardprojects .cardproject .hovered .imgdescript {
     width: 80%;
     font-size: .8rem;
@@ -629,7 +628,7 @@ main .projects .cardprojects .cardproject .hovered .push button {
   margin: 5px;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .projects .cardprojects .cardproject .hovered .push button {
     width: 100px;
     font-size: .7rem;
@@ -642,7 +641,7 @@ main .projects .cardprojects .cardproject .hovered .push button:hover {
   cursor: pointer;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   main .projects .cardprojects .cardproject .hovered .push button {
     margin-top: 5px;
   }
@@ -692,7 +691,7 @@ footer .contact .contacttitle span {
   letter-spacing: 1.5px;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .contact .contacttitle {
     margin-bottom: 50px;
   }
@@ -745,7 +744,7 @@ footer .contact form {
   width: 800px;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .contact form {
     width: 75%;
   }
@@ -774,7 +773,7 @@ footer .contact form .iform {
   color: white;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .contact form .iform {
     width: 100%;
   }
@@ -798,7 +797,7 @@ footer .contact #message {
   color: white;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .contact #message {
     height: 200px;
     width: 100%;
