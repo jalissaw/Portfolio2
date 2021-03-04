@@ -339,13 +339,13 @@ main {
                             height: 50px;
                             color: $primary-color;
                             border: none;
+                            outline: none;
                             background: transparent;
                             text-transform: uppercase;
                             font-size: 100%;
                             margin-top: 15px;
                             text-align: center;
                             transition: ease-in 0.3s all;
-                            border-radius: 40px;
                             margin: 5px;
                             
                             @media #{$allphones} {
