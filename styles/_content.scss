@@ -45,7 +45,6 @@ main {
             font-size: 1.2em;
             font-weight: 500;
             letter-spacing: 1px;
-
             @media #{$allphones} {
                 width: 80%;
             }
@@ -72,12 +71,11 @@ main {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 250px;
+            height: 100px;
             width: 300px;
             text-align: center;
             color: rgb(30, 31, 32);
             margin-top: 20px;
-            border-radius: 5px;
             
         }
 
@@ -91,14 +89,14 @@ main {
         }
 
         .fas {
-            font-size: 2.7em;
+            font-size: 2.7rem;
             margin-bottom: 15px;
             text-shadow: 1px 2px 2px black;
             color: $primary-color;
         }
 
         .cardtitle {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             text-transform: uppercase;
             color: rgb(30, 31, 32);
         }
@@ -106,8 +104,13 @@ main {
         .infotxt {
             width: 75%;
             margin-top: 10px;
-            font-size: 1em;
+            font-size: 1rem;
             color: rgb(30, 31, 32);
+
+            @media #{$allphones} {
+                font-size: 1.2rem;
+            }
+            
         }
 
         .mobile {
