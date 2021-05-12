@@ -14,7 +14,7 @@ footer {
         .contacttitle {
             text-align: center;
             text-transform: uppercase;
-            font-size: 2em;
+            font-size: 2rem;
             margin-bottom: 60px;
             transition: ease 0.4s all;
             transform: translateX(20px);
@@ -45,12 +45,12 @@ footer {
 
         .errorMessage {
             margin-bottom: 15px;
-            font-size: 1.1em;
+            font-size: 1.1rem;
         }
 
         .contactmessage {
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.5rem;
             margin-bottom: 40px;
             color: $primary-color;
             
@@ -127,7 +127,7 @@ footer {
         .submit {
             height: 50px;
             width: 150px;
-            font-size: 1.3em;
+            font-size: 1.3rem;
             background: $primary-color;
             border: none;
             color: white;
@@ -157,7 +157,7 @@ footer {
 
             .fab {
                 color: white;
-                font-size: 3em;
+                font-size: 3rem;
                 transition: ease-in 0.3s all;
 
                 &:hover {
@@ -180,7 +180,7 @@ footer {
 
 
     .footername {
-        font-size: 1em;
+        font-size: 1rem;
         color: white;
     }
 }
