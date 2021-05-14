@@ -30,13 +30,25 @@ header{
         display: flex;
         height: 100vh;
         width: 100%;
+        position: relative;
+
+        .overlay {
+            height: 100vh;
+            width: 100%;
+            background: rgba(30, 31, 32, 0.6);
+            position: absolute;
+        }
 
         .header {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             width: 100%;
-            margin-top: 100px;
+            background: url('/img/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
 
             @media #{$mphones} {
                 font-size: 0.9rem;
@@ -45,6 +57,12 @@ header{
                 font-size: 0.8rem;
             }
             
+            .intro-name {
+                font-size: 4rem;
+                color: $primary-color;
+                text-align: center;
+                z-index: 3;
+            }
 
             .intro {
                 font-size: 2rem;
@@ -52,6 +70,8 @@ header{
                 color: white;
                 letter-spacing: 1px;
                 font-weight: 100;
+                text-align: center;
+                z-index: 3;
 
                 @media #{$allphones} {
                     font-size: 1.45rem;

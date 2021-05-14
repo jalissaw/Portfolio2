@@ -8,6 +8,7 @@
     width: 100%;
     overflow: hidden;
     transition: ease 0.8s all;
+    z-index: 2;
 
     .links {
         display: flex;
@@ -16,7 +17,6 @@
         width: 100%;
         list-style-type: none;
         overflow: hidden;
-        z-index: -1;
 
         .link {
             margin: 20px 50px;
@@ -59,7 +59,7 @@
         left: 10px;
         height: 60px;
         width: 60px;
-        z-index: 3;
+        z-index: 9;
 
 
         .toggle {
@@ -119,6 +119,7 @@
         z-index: 2;
         clip-path: circle(6.2% at 50% 50%);
         pointer-events: none;
+        z-index: 4;
 
         &.open {
             clip-path: circle(70.7% at 50% 50%);

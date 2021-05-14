@@ -11,6 +11,7 @@
   overflow: hidden;
   -webkit-transition: ease 0.8s all;
   transition: ease 0.8s all;
+  z-index: 2;
 }
 
 .nav .links {
@@ -26,7 +27,6 @@
   width: 100%;
   list-style-type: none;
   overflow: hidden;
-  z-index: -1;
 }
 
 .nav .links .link {
@@ -48,7 +48,7 @@
 
 .nav .links .link a {
   text-decoration: none;
-  color: #5872c9;
+  color: #967bda;
   font-weight: bold;
   padding: 8px;
   -webkit-transition: ease-in 0.4s all;
@@ -57,7 +57,7 @@
 
 .nav .links .link a:hover {
   color: white;
-  background: #5872c9;
+  background: #967bda;
   border-radius: 4px;
 }
 
@@ -76,7 +76,7 @@
   left: 10px;
   height: 60px;
   width: 60px;
-  z-index: 3;
+  z-index: 9;
 }
 
 .menu .toggle {
@@ -96,7 +96,7 @@
   margin: auto 0;
   height: 2px;
   width: 40px;
-  background: #5872c9;
+  background: #967bda;
 }
 
 .menu .hamburger:hover {
@@ -109,7 +109,7 @@
   top: 38px;
   height: 2px;
   width: 40px;
-  background: #5872c9;
+  background: #967bda;
 }
 
 .menu .hamburger::after {
@@ -118,7 +118,7 @@
   top: 20px;
   height: 2px;
   width: 40px;
-  background: #5872c9;
+  background: #967bda;
 }
 
 .shownav {
@@ -142,6 +142,7 @@
   -webkit-clip-path: circle(6.2% at 50% 50%);
           clip-path: circle(6.2% at 50% 50%);
   pointer-events: none;
+  z-index: 4;
 }
 
 .shownav.open {
@@ -165,12 +166,12 @@
 }
 
 .shownav .showlinks .showlink a {
-  color: #5872c9;
+  color: #967bda;
   text-decoration: none;
 }
 
 .shownav .showlinks .showlink a:hover {
-  color: #5872c9;
+  color: #967bda;
 }
 
 main {
@@ -197,7 +198,7 @@ main .about {
 }
 
 main .about span {
-  color: #5872c9;
+  color: #967bda;
   font-size: 3rem;
   letter-spacing: 1.5px;
 }
@@ -302,14 +303,14 @@ main .areas .fas {
   font-size: 2.7rem;
   margin-bottom: 15px;
   text-shadow: 1px 2px 2px black;
-  color: #5872c9;
+  color: #967bda;
 }
 
 main .areas .cardtitle {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #1e1f20;
-  border-bottom: 1.5px solid #5872c9;
+  border-bottom: 1.5px solid #967bda;
 }
 
 main .areas .infotxt {
@@ -389,7 +390,7 @@ main .skillset .skilltitle {
   text-transform: uppercase;
   font-size: 1.7em;
   margin-bottom: 10px;
-  color: #5872c9;
+  color: #967bda;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -420,7 +421,7 @@ main .projects {
 }
 
 main .projects .active {
-  background: #5872c9;
+  background: #967bda;
 }
 
 main .projects .projecttitle {
@@ -438,7 +439,7 @@ main .projects .projecttitle {
 }
 
 main .projects .projecttitle span {
-  color: #5872c9;
+  color: #967bda;
   font-size: 3rem;
   letter-spacing: 1.5px;
 }
@@ -573,10 +574,10 @@ main .projects .cardprojects .cardproject .hovered {
 
 main .projects .cardprojects .cardproject .hovered .project-title {
   margin-top: 10px;
-  color: #5872c9;
+  color: #967bda;
   text-transform: uppercase;
-  border-bottom: 1px solid #5872c9;
-  border-top: 1px solid #5872c9;
+  border-bottom: 1px solid #967bda;
+  border-top: 1px solid #967bda;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -588,7 +589,7 @@ main .projects .cardprojects .cardproject .hovered .project-title {
 main .projects .cardprojects .cardproject .hovered .imgdescript {
   margin-top: 10px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.15rem;
   width: 80%;
 }
 
@@ -608,7 +609,7 @@ main .projects .cardprojects .cardproject .hovered .used-skills {
 }
 
 main .projects .cardprojects .cardproject .hovered .used-skills .fab {
-  color: #5872c9;
+  color: #967bda;
   font-size: 1.8rem;
   margin: 5px;
 }
@@ -627,8 +628,9 @@ main .projects .cardprojects .cardproject .hovered .push {
 main .projects .cardprojects .cardproject .hovered .push button {
   width: 150px;
   height: 50px;
-  color: #5872c9;
+  color: #967bda;
   border: none;
+  outline: none;
   background: transparent;
   text-transform: uppercase;
   font-size: 100%;
@@ -636,7 +638,6 @@ main .projects .cardprojects .cardproject .hovered .push button {
   text-align: center;
   -webkit-transition: ease-in 0.3s all;
   transition: ease-in 0.3s all;
-  border-radius: 40px;
   margin: 5px;
 }
 
@@ -686,7 +687,7 @@ footer .contact {
 footer .contact .contacttitle {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 60px;
   -webkit-transition: ease 0.4s all;
   transition: ease 0.4s all;
@@ -698,7 +699,7 @@ footer .contact .contacttitle {
 }
 
 footer .contact .contacttitle span {
-  color: #5872c9;
+  color: #967bda;
   font-size: 3rem;
   letter-spacing: 1.5px;
 }
@@ -723,14 +724,14 @@ footer .contact .contacttitle.appear {
 
 footer .contact .errorMessage {
   margin-bottom: 15px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 footer .contact .contactmessage {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 40px;
-  color: #5872c9;
+  color: #967bda;
 }
 
 @media (max-width: 320px) {
@@ -780,7 +781,7 @@ footer .contact form .iform {
   margin-bottom: 10px;
   padding-left: 10px;
   border: none;
-  border-bottom: 1px solid #5872c9;
+  border-bottom: 1px solid #967bda;
   background: transparent;
   color: white;
 }
@@ -804,7 +805,7 @@ footer .contact #message {
   padding-left: 10px;
   padding-top: 10px;
   margin-top: 25px;
-  border: 1px solid #5872c9;
+  border: 1px solid #967bda;
   background: transparent;
   color: white;
 }
@@ -845,8 +846,8 @@ footer .contact ::placeholder {
 footer .contact .submit {
   height: 50px;
   width: 150px;
-  font-size: 1.3em;
-  background: #5872c9;
+  font-size: 1.3rem;
+  background: #967bda;
   border: none;
   color: white;
   text-transform: uppercase;
@@ -857,7 +858,7 @@ footer .contact .submit {
 
 footer .contact .submit:hover {
   background: white;
-  color: #5872c9;
+  color: #967bda;
   cursor: pointer;
 }
 
@@ -877,7 +878,7 @@ footer .contactinfo {
           align-items: center;
   padding: 50px 0px;
   width: 100%;
-  background: #5872c9;
+  background: #967bda;
 }
 
 footer .contactinfo .contacticons {
@@ -886,7 +887,7 @@ footer .contactinfo .contacticons {
 
 footer .contactinfo .contacticons .fab {
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
   -webkit-transition: ease-in 0.3s all;
   transition: ease-in 0.3s all;
 }
@@ -913,7 +914,7 @@ footer .copy {
 }
 
 footer .footername {
-  font-size: 1em;
+  font-size: 1rem;
   color: white;
 }
 
@@ -972,6 +973,14 @@ header .heading {
   display: flex;
   height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+header .heading .overlay {
+  height: 100vh;
+  width: 100%;
+  background: rgba(30, 31, 32, 0.6);
+  position: absolute;
 }
 
 header .heading .header {
@@ -984,8 +993,16 @@ header .heading .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  margin-top: 100px;
+  background: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 321px) and (max-width: 374px) {
@@ -1000,12 +1017,21 @@ header .heading .header {
   }
 }
 
+header .heading .header .intro-name {
+  font-size: 4rem;
+  color: #967bda;
+  text-align: center;
+  z-index: 3;
+}
+
 header .heading .header .intro {
   font-size: 2rem;
   width: 60%;
   color: white;
   letter-spacing: 1px;
   font-weight: 100;
+  text-align: center;
+  z-index: 3;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -1021,7 +1047,7 @@ header .heading .header .name {
   padding: 0px 5px;
   font-size: 3.5rem;
   font-weight: bold;
-  color: #5872c9;
+  color: #967bda;
   font-family: Rubik;
 }
 
