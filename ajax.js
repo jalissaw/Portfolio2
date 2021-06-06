@@ -6,6 +6,7 @@ const xhr = new XMLHttpRequest();
 
 xhr.onload = () => {
     form.addEventListener('submit', () => {
+        
         const email = document.querySelector('.email').value;
         const name = document.querySelector('.formname').value;
         event.preventDefault();
