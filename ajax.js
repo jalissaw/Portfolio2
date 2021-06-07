@@ -10,12 +10,13 @@ xhr.onload = () => {
         const email = document.querySelector('.email').value;
         const name = document.querySelector('.formname').value;
         event.preventDefault();
+        
         if(name === '' || email === '') {
             errorMessage.innerHTML = 'Name And Email Required';
             
         } else {
             errorMessage.innerHTML = 'Success! I will be in touch shortly.'
-            setTimeout(()=>form.submit(), 1500);
+            setTimeout(()=> form.submit(), 1500);
         }
 
     });
