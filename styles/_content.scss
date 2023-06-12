@@ -14,7 +14,7 @@ main {
         width: 100%;
 
         span {
-            color: $primary-color;
+            color: $secondary-color;
             font-size: 3rem;
             letter-spacing: 1.5px;
         }
@@ -92,14 +92,14 @@ main {
             font-size: 2.7rem;
             margin-bottom: 15px;
             text-shadow: 1px 2px 2px black;
-            color: $primary-color;
+            color: $secondary-color;
         }
 
         .cardtitle {
             font-size: 1.5rem;
             text-transform: uppercase;
             color: rgb(30, 31, 32);
-            border-bottom: 1.5px solid $primary-color;
+            border-bottom: 1.5px solid $secondary-color;
         }
 
         .infotxt {
@@ -160,7 +160,7 @@ main {
             text-transform: uppercase;
             font-size: 1.7em;
             margin-bottom: 10px;
-            color: $primary-color;
+            color: $secondary-color;
             
             @media #{$allphones} {
                 padding: 0px 15px;
@@ -183,7 +183,7 @@ main {
         padding-bottom: 100px;
 
         .active {
-            background: $primary-color;
+            background: $secondary-color;;
         }
 
         .projecttitle {
@@ -198,7 +198,7 @@ main {
             color: rgb(30, 31, 32);
 
             span {
-                color: $primary-color;
+                color: $secondary-color;
                 font-size: 3rem;
                 letter-spacing: 1.5px;
             }
@@ -222,6 +222,10 @@ main {
 
                 li:nth-child(2) {
                     margin: 0px 10px;
+                }
+
+                .active {
+                    color: white
                 }
 
                 li {
@@ -295,10 +299,10 @@ main {
 
                     .project-title {
                         margin-top: 10px;
-                        color: $primary-color;
+                        color: $secondary-color;
                         text-transform: uppercase;
-                        border-bottom: 1px solid $primary-color;
-                        border-top: 1px solid $primary-color;
+                        border-bottom: 1px solid $secondary-color;
+                        border-top: 1px solid $secondary-color;
 
                         @media #{$allphones} {
                             font-size: 1.1rem;
@@ -323,7 +327,7 @@ main {
                         margin-top: 10px;
 
                         .fab {
-                            color: $primary-color;
+                            color: $secondary-color;
                             font-size: 1.8rem;
                             margin: 5px;
                         }
@@ -337,7 +341,7 @@ main {
                         button {
                             width: 150px;
                             height: 50px;
-                            color: $primary-color;
+                            color: $secondary-color;
                             border: none;
                             outline: none;
                             background: transparent;

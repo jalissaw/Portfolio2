@@ -20,8 +20,10 @@
     <header class="transition">
         
         <div class="menu">
-            <insput type="checkbox" class="toggle">
-            <span class="hamburger"></span>
+            <label for="hamburger" hidden>
+                <input id="hamburger" type="checkbox"class="toggle">
+                <span class="hamburger"></span>
+            </label>
         </div>
 
         <div class="shownav">
@@ -143,7 +145,11 @@
             <div class="cardprojects">
                 
                 <div class="cardproject" data-content="all" data-filter="javascript">
-                    <img src="img/prosperity.gif" class="airimg" alt="A gif of a website">
+                    <video class="airimg" autoplay loop muted playsinline>
+                        <source src="img/prosperity.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                        <track src="captions_es.vtt" kind="captions" srclang="es" label="spanish_captions">
+                    </video>
                     <div class="hovered">
                         <h2 class="project-title">Prosperity Enterprise Services</h2>
                         <p class="imgdescript">
@@ -165,9 +171,13 @@
                 </div>
                 
                 <div class="cardproject" data-content="all" data-filter="react">
-                    <img src="img/dashboard2.gif" class="airimg" alt="A Gif of A DashBoard that received stock information">
+                    <video class="airimg" autoplay loop muted playsinline >
+                        <source src="img/dashboard2.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                        <track src="captions_es.vtt" kind="captions" srclang="es" label="spanish_captions">
+                    </video>
                     <div class="hovered">
-                        <h2 class="project-title">DashBoard</h2>
+                        <h2 class="project-title">Stock DashBoard</h2>
                         <p class="imgdescript">This is a react project that uses hooks, and useEffect. I used promises to gather data from multiple APIs and integrate 
                             them into the dashboard. Chart js was used and I integrated an API with fetch to compare the volume of the stocks.
                         </p>
@@ -186,7 +196,11 @@
                 </div>
                 
                 <div class="cardproject" data-content="all" data-filter="javascript">
-                    <img src="img/shoestore.gif" class="airimg" alt="Shoe Store Gif">
+                    <video class="airimg" autoplay loop muted playsinline>
+                        <source src="img/shoestore.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                        <track src="captions_es.vtt" kind="captions" srclang="es" label="spanish_captions">
+                    </video>
                     <div class="hovered">
                         <h2 class="project-title">Shoe Store - Drip</h2>
                         <p class="imgdescript">An ecommerce website built with Object Oriented Programming(OOP) in mind.</p>
@@ -205,17 +219,17 @@
                 </div>
                 
                 <div class="cardproject" data-content="all" data-filter="react">
-                    <img src="img/StreamApp.gif" class="airimg" alt="A gif of a streaming application">
+                    <video class="airimg" autoplay loop muted playsinline >
+                        <source src="img/StreamApp.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                        <track src="captions_es.vtt" kind="captions" srclang="es" label="spanish_captions">
+                    </video>
                     <div class="hovered">
                         <h2 class="project-title">Spectacle - A Streaming App</h2>
                         <p class="imgdescript">
                             A react project that displays movies and tv shows. It has a search filter method and you can also add titles to a watchlist.
                         </p>
-                        <p class="imgdescript">
-                            Uses React hooks, and effects
-                            Uses Switch, Route, Link, and Router to Navigate between pages. Fetch is also used
-                            to gather info from a 3rd party API. 
-                        </p>
+                      
                         <div class="used-skills">
                             <i class="fab fa-html5" title="HTML5"></i>
                             <i class="fab fa-css3-alt" title="CSS"></i>
@@ -231,7 +245,12 @@
                 </div>
                 
                 <div class="cardproject" data-content="all" data-filter="javascript">
-                    <img src="img/20Something.gif" class="airimg podcastwebsite" alt="gif of website 20somethingandliving podcast">
+
+                    <video class="airimg" autoplay loop muted playsinline>
+                        <source src="img/20Something.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                        <track src="captions_es.vtt" kind="captions" srclang="es" label="spanish_captions">
+                    </video>
                     <div class="hovered">
                         <h2 class="project-title">20somethingandliving</h2>
                         <p class="imgdescript">Redesigning and building a website from scratch for a small podcast.</p>
@@ -249,7 +268,11 @@
                 </div>
                 
                 <div class="cardproject" data-content="all" data-filter="javascript">
-                    <img src="img/networkportfolio.gif" class="airimg" alt="Network Porfolio GIF">
+                    <video class="airimg" autoplay loop muted playsinline>
+                        <source src="img/networkportfolio.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                        <track src="captions_es.vtt" kind="captions" srclang="es" label="spanish_captions">
+                    </video>
                     <div class="hovered">
                         <h2 class="project-title">Network Portfolio</h2>
                         <p class="imgdescript">This was a project that I was asked to mock up and design for a portfolio. I used GSAP for the animations</p>

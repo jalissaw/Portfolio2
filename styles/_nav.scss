@@ -52,14 +52,18 @@
 
     .menu {
         position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
         top: 29px;
         left: 10px;
         height: 60px;
         width: 60px;
         z-index: 9;
+
+        @media #{$displayTablets} {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
 
         .toggle {

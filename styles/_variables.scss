@@ -1,4 +1,5 @@
-$primary-color: #967bda;
+$primary-color: #a682fe;
+$secondary-color: #684ab1;
 $primary-light: lighten(rgb(88, 114, 201), 10%);
 
 $laptop: "(min-width: 830px) and (max-width: 10000px)";
@@ -9,5 +10,6 @@ $stablets: "(min-width: 416px) and (max-width:600px)";
 $allphones: "(min-width: 0px) and (max-width: 480px)";
 $lphones: "(min-width: 375px) and (max-width: 480px)";
 $mphones: "(min-width: 321px) and (max-width: 374px)";
+$displayTablets: "(max-width: 850px)";
 $form: "(min-width: 1400px)";
 $sphones: "(max-width: 320px)";
